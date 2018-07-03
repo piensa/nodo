@@ -25,8 +25,8 @@ import (
 	"testing"
 	"time"
 
-	xrpc "github.com/piensa/bert/cmd/rpc"
-	xnet "github.com/piensa/bert/pkg/net"
+	xrpc "github.com/piensa/nodo/cmd/rpc"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 func TestAuthArgsAuthenticate(t *testing.T) {

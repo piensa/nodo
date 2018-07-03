@@ -26,8 +26,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/piensa/bert/cmd/logger"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/cmd/logger"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 func isNetworkDisconnectError(err error) bool {

@@ -89,7 +89,7 @@ var globalHandlers = []HandlerFunc{
 // configureServer handler returns final handler for the http server.
 func configureServerHandler(endpoints EndpointList) (http.Handler, error) {
 	// Initialize router. `SkipClean(true)` stops gorilla/mux from
-	// normalizing URL path piensa/bert#3256
+	// normalizing URL path piensa/nodo#3256
 	router := mux.NewRouter().SkipClean(true)
 
 	// Initialize distributed NS lock.

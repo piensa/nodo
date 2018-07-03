@@ -21,7 +21,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/nodo/pkg/auth"
 )
 
 func testAuthenticate(authType string, t *testing.T) {

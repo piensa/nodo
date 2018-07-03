@@ -1,6 +1,6 @@
-# Minio Server `config.json` (v18) 指南 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# Minio Server `config.json` (v18) 指南 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
-Minio server在默认情况下会将所有配置信息存到 `${HOME}/.minio/config.json` 文件中。 以下部分提供每个字段的详细说明以及如何自定义它们。一个完整的 `config.json` 在 [这里](https://raw.githubusercontent.com/piensa/bert/master/docs/config/config.sample.json)
+Minio server在默认情况下会将所有配置信息存到 `${HOME}/.minio/config.json` 文件中。 以下部分提供每个字段的详细说明以及如何自定义它们。一个完整的 `config.json` 在 [这里](https://raw.githubusercontent.com/piensa/nodo/master/docs/config/config.sample.json)
 
 ## 配置目录
 默认的配置目录是 `${HOME}/.minio`，你可以使用`--config-dir`命令行选项重写之。  You can override the default configuration directory using `--config-dir` command-line option. Minio server在首次启动时会生成一个新的`config.json`，里面带有自动生成的访问凭据。 

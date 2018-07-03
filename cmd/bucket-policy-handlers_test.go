@@ -28,9 +28,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/policy/condition"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy/condition"
 )
 
 func getAnonReadOnlyBucketPolicy(bucketName string) *policy.Policy {

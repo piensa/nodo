@@ -22,7 +22,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/piensa/bert/pkg/policy/condition"
+	"github.com/piensa/nodo/pkg/policy/condition"
 )
 
 func TestPolicyIsAllowed(t *testing.T) {

@@ -24,8 +24,8 @@ import (
 	"time"
 
 	"github.com/eclipse/paho.mqtt.golang"
-	"github.com/piensa/bert/pkg/event"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/pkg/event"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 // MQTTArgs - MQTT target arguments.

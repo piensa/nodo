@@ -21,7 +21,7 @@ import (
 	"hash"
 	"io"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // CreateFile creates a new bitrot encoded file spread over all available disks. CreateFile will create

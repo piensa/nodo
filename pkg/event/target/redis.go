@@ -23,8 +23,8 @@ import (
 	"time"
 
 	"github.com/garyburd/redigo/redis"
-	"github.com/piensa/bert/pkg/event"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/pkg/event"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 // RedisArgs - Redis target arguments.

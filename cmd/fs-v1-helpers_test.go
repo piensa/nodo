@@ -25,7 +25,7 @@ import (
 	"path"
 	"testing"
 
-	"github.com/piensa/bert/pkg/lock"
+	"github.com/piensa/nodo/pkg/lock"
 )
 
 func TestFSRenameFile(t *testing.T) {

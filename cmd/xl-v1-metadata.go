@@ -29,7 +29,7 @@ import (
 	"time"
 
 	"github.com/minio/highwayhash"
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 	sha256 "github.com/minio/sha256-simd"
 	"golang.org/x/crypto/blake2b"
 )

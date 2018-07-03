@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/nodo/pkg/auth"
 )
 
 // credentialHeader data type represents structured form of Credential

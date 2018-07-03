@@ -32,10 +32,10 @@ import (
 	terrors "github.com/joyent/triton-go/errors"
 	"github.com/joyent/triton-go/storage"
 	"github.com/minio/cli"
-	minio "github.com/piensa/bert/cmd"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/hash"
+	minio "github.com/piensa/nodo/cmd"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 // stor is a namespace within manta where you store any documents that are deemed as private

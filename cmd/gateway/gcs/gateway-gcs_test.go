@@ -26,8 +26,8 @@ import (
 
 	"google.golang.org/api/googleapi"
 
-	miniogo "github.com/piensa/bert-go"
-	minio "github.com/piensa/bert/cmd"
+	miniogo "github.com/piensa/nodo-go"
+	minio "github.com/piensa/nodo/cmd"
 )
 
 func TestToGCSPageToken(t *testing.T) {

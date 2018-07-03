@@ -31,13 +31,13 @@ import (
 	b2 "github.com/minio/blazer/base"
 	"github.com/minio/cli"
 	miniogopolicy "github.com/minio/minio-go/pkg/policy"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	h2 "github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/policy/condition"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	h2 "github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy/condition"
 
-	minio "github.com/piensa/bert/cmd"
+	minio "github.com/piensa/nodo/cmd"
 )
 
 // Supported bucket types by B2 backend.

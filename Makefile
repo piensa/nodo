@@ -33,8 +33,8 @@ fmt:
 
 lint:
 	@echo "Running $@"
-	@${GOPATH}/bin/golint -set_exit_status github.com/piensa/bert/cmd...
-	@${GOPATH}/bin/golint -set_exit_status github.com/piensa/bert/pkg...
+	@${GOPATH}/bin/golint -set_exit_status github.com/piensa/nodo/cmd...
+	@${GOPATH}/bin/golint -set_exit_status github.com/piensa/nodo/pkg...
 
 ineffassign:
 	@echo "Running $@"
@@ -70,8 +70,8 @@ coverage: build
 
 # Builds minio locally.
 build: checks
-	@echo "Building bert binary to './bert'"
-	@CGO_ENABLED=0 go build -tags kqueue --ldflags $(BUILD_LDFLAGS) -o $(PWD)/bert
+	@echo "Building nodo binary to './nodo'"
+	@CGO_ENABLED=0 go build -tags kqueue --ldflags $(BUILD_LDFLAGS) -o $(PWD)/nodo
 
 pkg-add:
 	@echo "Adding new package $(PKG)"
@@ -90,9 +90,9 @@ pkg-list:
 
 # Builds minio and installs it to $GOPATH/bin.
 install: build
-	@echo "Installing bert binary to '$(GOPATH)/bin/bert'"
-	@mkdir -p $(GOPATH)/bin && cp $(PWD)/bert $(GOPATH)/bin/bert
-	@echo "Installation successful. To learn more, try \"bert --help\"."
+	@echo "Installing nodo binary to '$(GOPATH)/bin/nodo'"
+	@mkdir -p $(GOPATH)/bin && cp $(PWD)/nodo $(GOPATH)/bin/nodo
+	@echo "Installation successful. To learn more, try \"nodo --help\"."
 
 clean:
 	@echo "Cleaning up all the generated files"

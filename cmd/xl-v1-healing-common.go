@@ -21,7 +21,7 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // commonTime returns a maximally occurring time from a list of time.

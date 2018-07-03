@@ -28,8 +28,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piensa/bert-go/pkg/set"
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo-go/pkg/set"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 const (

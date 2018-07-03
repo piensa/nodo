@@ -29,9 +29,9 @@ import (
 	etcd "github.com/coreos/etcd/client"
 
 	"github.com/minio/cli"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/dns"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/dns"
 
 	"github.com/minio/minio-go/pkg/set"
 )

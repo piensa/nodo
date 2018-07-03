@@ -28,12 +28,12 @@ import (
 
 func genLDFlags(version string) string {
 	ldflagsStr := "-s -w"
-	ldflagsStr += " -X github.com/piensa/bert/cmd.Version=" + version
-	ldflagsStr += " -X github.com/piensa/bert/cmd.ReleaseTag=" + releaseTag(version)
-	ldflagsStr += " -X github.com/piensa/bert/cmd.CommitID=" + commitID()
-	ldflagsStr += " -X github.com/piensa/bert/cmd.ShortCommitID=" + commitID()[:12]
-	ldflagsStr += " -X github.com/piensa/bert/cmd.GOPATH=" + os.Getenv("GOPATH")
-	ldflagsStr += " -X github.com/piensa/bert/cmd.GOROOT=" + os.Getenv("GOROOT")
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.Version=" + version
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.ReleaseTag=" + releaseTag(version)
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.CommitID=" + commitID()
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.ShortCommitID=" + commitID()[:12]
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.GOPATH=" + os.Getenv("GOPATH")
+	ldflagsStr += " -X github.com/piensa/nodo/cmd.GOROOT=" + os.Getenv("GOROOT")
 	return ldflagsStr
 }
 

@@ -19,7 +19,7 @@ package wildcard_test
 import (
 	"testing"
 
-	"github.com/piensa/bert/pkg/wildcard"
+	"github.com/piensa/nodo/pkg/wildcard"
 )
 
 // TestMatch - Tests validate the logic of wild card matching.

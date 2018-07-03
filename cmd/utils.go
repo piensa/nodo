@@ -33,8 +33,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/handlers"
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/gorilla/mux"

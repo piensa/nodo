@@ -33,7 +33,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/piensa/bert-go/pkg/set"
+	"github.com/piensa/nodo-go/pkg/set"
 )
 
 var serverPort uint32 = 60000

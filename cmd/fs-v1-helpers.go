@@ -23,8 +23,8 @@ import (
 	pathutil "path"
 	"runtime"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/lock"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/lock"
 )
 
 // Removes only the file at given path does not remove

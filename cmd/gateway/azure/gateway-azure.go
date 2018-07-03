@@ -36,13 +36,13 @@ import (
 	"github.com/minio/cli"
 	miniogopolicy "github.com/minio/minio-go/pkg/policy"
 	sha256 "github.com/minio/sha256-simd"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/policy/condition"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy/condition"
 
-	minio "github.com/piensa/bert/cmd"
+	minio "github.com/piensa/nodo/cmd"
 )
 
 const (

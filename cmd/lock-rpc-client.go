@@ -20,7 +20,7 @@ import (
 	"crypto/tls"
 
 	"github.com/minio/dsync"
-	xnet "github.com/piensa/bert/pkg/net"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 // LockRPCClient is authenticable lock RPC client compatible to dsync.NetLocker

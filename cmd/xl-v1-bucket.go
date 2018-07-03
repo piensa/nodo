@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // list all errors that can be ignore in a bucket operation.

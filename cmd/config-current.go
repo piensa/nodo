@@ -22,12 +22,12 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/event/target"
-	"github.com/piensa/bert/pkg/quick"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/event/target"
+	"github.com/piensa/nodo/pkg/quick"
 )
 
 // Steps to move from version N to version N+1

@@ -26,7 +26,7 @@ import (
 
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/piensa/bert/pkg/certs"
+	"github.com/piensa/nodo/pkg/certs"
 )
 
 const (

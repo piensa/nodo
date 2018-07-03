@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
-	xrpc "github.com/piensa/bert/cmd/rpc"
-	xnet "github.com/piensa/bert/pkg/net"
+	xrpc "github.com/piensa/nodo/cmd/rpc"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 // DefaultSkewTime - skew time is 15 minutes between minio peers.

@@ -21,7 +21,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // Data types used for returning dummy access control

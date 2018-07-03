@@ -24,7 +24,7 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 const (

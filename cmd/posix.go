@@ -32,9 +32,9 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/disk"
-	"github.com/piensa/bert/pkg/mountinfo"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/disk"
+	"github.com/piensa/nodo/pkg/mountinfo"
 )
 
 const (

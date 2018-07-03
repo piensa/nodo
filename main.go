@@ -16,11 +16,11 @@
 
 /*
  * Below main package has canonical imports for 'go get' and 'go build'
- * to work with all other clones of github.com/piensa/bert repository. For
+ * to work with all other clones of github.com/piensa/nodo repository. For
  * more information refer https://golang.org/doc/go1.4#canonicalimports
  */
 
-package main // import "github.com/piensa/bert"
+package main // import "github.com/piensa/nodo"
 
 import (
 	"fmt"
@@ -29,10 +29,10 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/minio/mc/pkg/console"
-	minio "github.com/piensa/bert/cmd"
+	minio "github.com/piensa/nodo/cmd"
 
 	// Import gateway
-	_ "github.com/piensa/bert/cmd/gateway"
+	_ "github.com/piensa/nodo/cmd/gateway"
 )
 
 const (

@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/piensa/bert/pkg/ellipses"
+	"github.com/piensa/nodo/pkg/ellipses"
 )
 
 // This file implements and supports ellipses pattern for

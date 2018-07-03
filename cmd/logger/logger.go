@@ -158,7 +158,7 @@ func RegisterUIError(f func(string, error, bool) string) {
 }
 
 // Init sets the trimStrings to possible GOPATHs
-// and GOROOT directories. Also append github.com/piensa/bert
+// and GOROOT directories. Also append github.com/piensa/nodo
 // This is done to clean up the filename, when stack trace is
 // displayed when an error happens.
 func Init(goPath string, goRoot string) {
@@ -203,9 +203,9 @@ func Init(goPath string, goRoot string) {
 	// Remove duplicate entries.
 	trimStrings = uniqueEntries(trimStrings)
 
-	// Add "github.com/piensa/bert" as the last to cover
-	// paths like "{GOROOT}/src/github.com/piensa/bert"
-	// and "{GOPATH}/src/github.com/piensa/bert"
+	// Add "github.com/piensa/nodo" as the last to cover
+	// paths like "{GOROOT}/src/github.com/piensa/nodo"
+	// and "{GOPATH}/src/github.com/piensa/nodo"
 	trimStrings = append(trimStrings, filepath.Join("github.com", "minio", "minio")+string(filepath.Separator))
 }
 

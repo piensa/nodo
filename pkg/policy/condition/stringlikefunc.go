@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/piensa/bert/pkg/wildcard"
+	"github.com/piensa/nodo/pkg/wildcard"
 )
 
 func toStringLikeFuncString(n name, key Key, values set.StringSet) string {

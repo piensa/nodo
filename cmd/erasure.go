@@ -22,7 +22,7 @@ import (
 	"hash"
 
 	"github.com/klauspost/reedsolomon"
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // OfflineDisk represents an unavailable disk.

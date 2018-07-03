@@ -27,8 +27,8 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/dns"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/dns"
 	"github.com/skyrings/skyring-common/tools/uuid"
 )
 

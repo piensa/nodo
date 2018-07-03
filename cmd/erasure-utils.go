@@ -22,7 +22,7 @@ import (
 	"io"
 
 	"github.com/klauspost/reedsolomon"
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // getDataBlockLen - get length of data blocks from encoded blocks.

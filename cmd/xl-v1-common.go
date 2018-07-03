@@ -20,7 +20,7 @@ import (
 	"context"
 	"path"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // getLoadBalancedDisks - fetches load balanced (sufficiently randomized) disk slice.

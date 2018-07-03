@@ -20,7 +20,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 var toAPIErrorCodeTests = []struct {

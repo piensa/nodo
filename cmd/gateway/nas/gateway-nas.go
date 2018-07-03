@@ -18,8 +18,8 @@ package nas
 
 import (
 	"github.com/minio/cli"
-	minio "github.com/piensa/bert/cmd"
-	"github.com/piensa/bert/pkg/auth"
+	minio "github.com/piensa/nodo/cmd"
+	"github.com/piensa/nodo/pkg/auth"
 )
 
 const (

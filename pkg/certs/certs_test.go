@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/piensa/bert/pkg/certs"
+	"github.com/piensa/nodo/pkg/certs"
 )
 
 func updateCerts(crt, key string) {

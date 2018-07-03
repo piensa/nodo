@@ -36,13 +36,13 @@ import (
 	miniogo "github.com/minio/minio-go"
 	sha256 "github.com/minio/sha256-simd"
 	"github.com/minio/sio"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/dns"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/handlers"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/ioutil"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/dns"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/handlers"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/ioutil"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // supportedHeadGetReqParams - supported request parameters for GET and HEAD presigned request.

@@ -33,7 +33,7 @@ import (
 	"github.com/fatih/color"
 	"github.com/inconshreveable/go-update"
 	"github.com/minio/cli"
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 	_ "github.com/minio/sha256-simd" // Needed for sha256 hash verifier.
 	"github.com/segmentio/go-prompt"
 )
@@ -239,7 +239,7 @@ func IsSourceBuild() bool {
 //   Minio (<OS>; <ARCH>[; <MODE>][; dcos][; kubernetes][; docker][; source]) Minio/<VERSION> Minio/<RELEASE-TAG> Minio/<COMMIT-ID> [Minio/universe-<PACKAGE-NAME>] [Minio/helm-<HELM-VERSION>]
 //
 // Any change here should be discussed by opening an issue at
-// https://github.com/piensa/bert/issues.
+// https://github.com/piensa/nodo/issues.
 func getUserAgent(mode string) string {
 
 	userAgentParts := []string{}
@@ -424,7 +424,7 @@ func getDownloadURL(releaseTag string) (downloadURL string) {
 	// Check if we are docker environment, return docker update command
 	if IsDocker() {
 		// Construct release tag name.
-		return fmt.Sprintf("docker pull piensa/bert:%s", releaseTag)
+		return fmt.Sprintf("docker pull piensa/nodo:%s", releaseTag)
 	}
 
 	// For binary only installations, we return link to the latest binary.

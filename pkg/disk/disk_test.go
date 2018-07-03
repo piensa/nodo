@@ -23,7 +23,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/piensa/bert/pkg/disk"
+	"github.com/piensa/nodo/pkg/disk"
 )
 
 func TestFree(t *testing.T) {

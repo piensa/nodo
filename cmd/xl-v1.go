@@ -21,8 +21,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/bpool"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/bpool"
 )
 
 // XL constants.

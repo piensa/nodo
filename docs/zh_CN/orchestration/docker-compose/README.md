@@ -1,4 +1,4 @@
-# 使用Docker Compose部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# 使用Docker Compose部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 Docker Compose允许定义和运行单主机，多容器Docker应用程序。
 
@@ -11,7 +11,7 @@ Docker Compose允许定义和运行单主机，多容器Docker应用程序。
 
 ## 2. 在Docker Compose上运行分布式Minio
 
-在Docker Compose上部署分布式Minio,请下载[docker-compose.yaml](https://github.com/piensa/bert/blob/master/docs/orchestration/docker-compose/docker-compose.yaml?raw=true)到你的当前工作目录。Docker Compose会pull Minio Docker Image,所以你不需要手动去下载Minio binary。然后运行下面的命令
+在Docker Compose上部署分布式Minio,请下载[docker-compose.yaml](https://github.com/piensa/nodo/blob/master/docs/orchestration/docker-compose/docker-compose.yaml?raw=true)到你的当前工作目录。Docker Compose会pull Minio Docker Image,所以你不需要手动去下载Minio binary。然后运行下面的命令
 
 ### GNU/Linux and macOS
 
@@ -31,7 +31,7 @@ docker-compose.exe up
 
 ### 注意事项
 
-* 默认情况下Docker Compose file使用的是最新版的Minio server的Docker镜像，你可以修改image tag来拉取指定版本的[Minio Docker image](https://hub.docker.com/r/piensa/bert/).
+* 默认情况下Docker Compose file使用的是最新版的Minio server的Docker镜像，你可以修改image tag来拉取指定版本的[Minio Docker image](https://hub.docker.com/r/piensa/nodo/).
 
 * 默认情况下会创建4个minio实例，你可以添加更多的Minio服务（最多总共16个）到你的Minio Comose deployment。添加一个服务
   * 复制服务定义并适当地更改新服务的名称。

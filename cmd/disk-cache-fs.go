@@ -28,10 +28,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/disk"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/lock"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/disk"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/lock"
 )
 
 const (

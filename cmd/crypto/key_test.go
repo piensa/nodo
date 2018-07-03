@@ -40,7 +40,7 @@ var generateKeyTests = []struct {
 	{ExtKey: [32]byte{}, Random: nil, ShouldPass: true},             // 0
 	{ExtKey: [32]byte{}, Random: rand.Reader, ShouldPass: true},     // 1
 	{ExtKey: [32]byte{}, Random: shortRandom(32), ShouldPass: true}, // 2
-	// {ExtKey: [32]byte{}, Random: shortRandom(31), ShouldPass: false}, // 3 See: https://github.com/piensa/bert/issues/6064
+	// {ExtKey: [32]byte{}, Random: shortRandom(31), ShouldPass: false}, // 3 See: https://github.com/piensa/nodo/issues/6064
 }
 
 func TestGenerateKey(t *testing.T) {

@@ -19,7 +19,7 @@ package cmd
 import (
 	"runtime/debug"
 
-	"github.com/piensa/bert/pkg/sys"
+	"github.com/piensa/nodo/pkg/sys"
 )
 
 func setMaxResources() (err error) {

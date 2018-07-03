@@ -30,7 +30,7 @@ import (
 	"syscall"
 	"testing"
 
-	"github.com/piensa/bert/pkg/disk"
+	"github.com/piensa/nodo/pkg/disk"
 )
 
 // Tests validate volume name.

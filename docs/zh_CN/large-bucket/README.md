@@ -1,8 +1,8 @@
-# 超大存储桶快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# 超大存储桶快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 Minio的纠删码功能限制了最多只能使用16块磁盘。这就限制了一个租户的数据可以用多少存储空间。不过，为了满足需要大量磁盘或者是超大容量存储空间的需求，我们引入了超大存储桶的支持。
 
-如果一个Minio存储桶可以扩展到多个纠删码部署集合，我们就称之为超大存储桶。不需要做任何特殊设置，它就可以帮助你创建PB级的存储系统。为了超大存储桶支持，你就可以在部署Minio服务时使用超过16块磁盘。Minio在内部创建了多个纠删码集合，这些集合又进一步组合成一个命名空间。本文将对超大存储桶的部署做一个简单的介绍。想了解更多，请参考[设计文档](https://github.com/piensa/bert/blob/master/docs/large-bucket/DESIGN.md)。
+如果一个Minio存储桶可以扩展到多个纠删码部署集合，我们就称之为超大存储桶。不需要做任何特殊设置，它就可以帮助你创建PB级的存储系统。为了超大存储桶支持，你就可以在部署Minio服务时使用超过16块磁盘。Minio在内部创建了多个纠删码集合，这些集合又进一步组合成一个命名空间。本文将对超大存储桶的部署做一个简单的介绍。想了解更多，请参考[设计文档](https://github.com/piensa/nodo/blob/master/docs/large-bucket/DESIGN.md)。
 
 ## 开始
 安装和部署方式和分布式Minio一样。只不过是在输入参数的语法上，用`...`来做为磁盘参数的简写。分布式设置中的远程磁盘被编码为HTTP（s）URI，它也可以被同样的缩写。

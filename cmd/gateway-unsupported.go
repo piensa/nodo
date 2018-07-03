@@ -20,10 +20,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/madmin"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/madmin"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // GatewayUnsupported list of unsupported call stubs for gateway.

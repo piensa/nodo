@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	xnet "github.com/piensa/bert/pkg/net"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 ///////////////////////////////////////////////////////////////////////////////

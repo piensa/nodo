@@ -1,4 +1,4 @@
-# Deploy Minio on Docker Swarm [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# Deploy Minio on Docker Swarm [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 Docker Engine provides cluster management and orchestration features in Swarm mode. Minio server can be easily deployed in distributed mode on Swarm to create a multi-tenant, highly-available and scalable object store.
 
@@ -34,7 +34,7 @@ echo "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" | docker secret create secret_ke
 
 ## 4. Deploy distributed Minio services
 
-Download the [Docker Compose file](https://github.com/piensa/bert/blob/master/docs/orchestration/docker-swarm/docker-compose-secrets.yaml?raw=true) on your Swarm master. Then execute the command
+Download the [Docker Compose file](https://github.com/piensa/nodo/blob/master/docs/orchestration/docker-swarm/docker-compose-secrets.yaml?raw=true) on your Swarm master. Then execute the command
 
 ```shell
 docker stack deploy --compose-file=docker-compose-secrets.yaml minio_stack
@@ -61,7 +61,7 @@ This will remove all the volumes not associated with any container.
 
 ### Notes
 
-* By default the Docker Compose file uses the Docker image for latest Minio server release. You can change the image tag to pull a specific [Minio Docker image](https://hub.docker.com/r/piensa/bert/).
+* By default the Docker Compose file uses the Docker image for latest Minio server release. You can change the image tag to pull a specific [Minio Docker image](https://hub.docker.com/r/piensa/nodo/).
 
 * There are 4 minio distributed instances created by default. You can add more Minio services (up to total 16) to your Minio Swarm deployment. To add a service
   * Replicate a service definition and change the name of the new service appropriately.

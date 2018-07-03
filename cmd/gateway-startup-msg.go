@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // Prints the formatted startup message.

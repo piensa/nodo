@@ -20,7 +20,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // Validate all the ListObjects query arguments, returns an APIErrorCode

@@ -1,4 +1,4 @@
-# 分布式Minio快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# 分布式Minio快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 分布式Minio可以让你将多块硬盘（甚至在不同的机器上）组成一个对象存储服务。由于硬盘分布在不同的节点上，分布式Minio避免了单点故障。   
 
@@ -8,7 +8,7 @@
 
 ### 数据保护
 
-分布式Minio采用 [erasure code](https://docs.minio.io/cn/minio-erasure-code-quickstart-guide)来防范多个节点宕机和[位衰减`bit rot`](https://github.com/piensa/bert/blob/master/cn/erasure/README.md#what-is-bit-rot-protection)。  
+分布式Minio采用 [erasure code](https://docs.minio.io/cn/minio-erasure-code-quickstart-guide)来防范多个节点宕机和[位衰减`bit rot`](https://github.com/piensa/nodo/blob/master/cn/erasure/README.md#what-is-bit-rot-protection)。  
 分布式Minio至少需要4个节点，使用分布式Minio自动引入了纠删码功能。
 
 ### 高可用
@@ -70,7 +70,7 @@ minio.exe server http://192.168.1.11/C:/data http://192.168.1.12/C:/data ^
                   http://192.168.1.17/C:/data http://192.168.1.18/C:/data
 ```
 
-![分布式Minio,8节点，每个节点一块盘](https://github.com/piensa/bert/blob/master/docs/screenshots/Architecture-diagram_distributed_8.jpg?raw=true)
+![分布式Minio,8节点，每个节点一块盘](https://github.com/piensa/nodo/blob/master/docs/screenshots/Architecture-diagram_distributed_8.jpg?raw=true)
 
 示例2: 启动分布式Minio实例，4节点，每节点4块盘，需要在4个节点上都运行下面的命令。
 
@@ -104,7 +104,7 @@ minio.exe server http://192.168.1.11/C:/data1 http://192.168.1.11/C:/data2 ^
                   http://192.168.1.14/C:/data3 http://192.168.1.14/C:/data4
 ```
 
-![分布式Minio,4节点，每节点4块盘](https://github.com/piensa/bert/blob/master/docs/screenshots/Architecture-diagram_distributed_16.jpg?raw=true)
+![分布式Minio,4节点，每节点4块盘](https://github.com/piensa/nodo/blob/master/docs/screenshots/Architecture-diagram_distributed_16.jpg?raw=true)
 
 ## 3. 验证
 

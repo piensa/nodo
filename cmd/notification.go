@@ -28,12 +28,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/hash"
-	xnet "github.com/piensa/bert/pkg/net"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/hash"
+	xnet "github.com/piensa/nodo/pkg/net"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // NotificationSys - notification system.

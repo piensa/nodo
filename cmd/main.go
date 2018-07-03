@@ -23,8 +23,8 @@ import (
 
 	"github.com/minio/cli"
 	"github.com/minio/mc/pkg/console"
-	"github.com/piensa/bert/pkg/trie"
-	"github.com/piensa/bert/pkg/words"
+	"github.com/piensa/nodo/pkg/trie"
+	"github.com/piensa/nodo/pkg/words"
 )
 
 // global flags for minio.
@@ -122,8 +122,8 @@ func newApp(name string) *cli.App {
 	app.Name = name
 	app.Author = "piensa.co"
 	app.Version = Version
-	app.Usage = "bert - GIS storage server."
-	app.Description = `bert - A modified Minio. Minio is an Amazon S3 compatible object storage server. Use it to store photos, videos, VMs, containers, log files, or any blob of data as objects.`
+	app.Usage = "nodo - GIS storage server."
+	app.Description = `nodo - A modified Minio. Minio is an Amazon S3 compatible object storage server. Use it to store photos, videos, VMs, containers, log files, or any blob of data as objects.`
 	app.Flags = globalFlags
 	app.HideVersion = true     // Hide `--version` flag, we already have `minio version`.
 	app.HideHelpCommand = true // Hide `help, h` command, we already have `minio --help`.

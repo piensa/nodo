@@ -21,7 +21,7 @@ import (
 	"net/http"
 	"testing"
 
-	minio "github.com/piensa/bert-go"
+	minio "github.com/piensa/nodo-go"
 )
 
 // Test Post Policy parsing and checking conditions

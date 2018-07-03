@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/piensa/bert/pkg/ellipses"
+	"github.com/piensa/nodo/pkg/ellipses"
 )
 
 // Tests create endpoints with ellipses and without.

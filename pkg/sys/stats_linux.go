@@ -22,7 +22,7 @@ import (
 	"os"
 	"syscall"
 
-	"github.com/piensa/bert/pkg/cgroup"
+	"github.com/piensa/nodo/pkg/cgroup"
 )
 
 // Get the final system memory limit chosen by the user.

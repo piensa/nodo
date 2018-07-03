@@ -22,8 +22,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/event/target"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/event/target"
 )
 
 func TestServerConfig(t *testing.T) {

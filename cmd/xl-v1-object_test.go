@@ -58,7 +58,7 @@ func TestRepeatPutObjectPart(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	// PutObjectPart should succeed even if part already exists. ref: https://github.com/piensa/bert/issues/1930
+	// PutObjectPart should succeed even if part already exists. ref: https://github.com/piensa/nodo/issues/1930
 	_, err = objLayer.PutObjectPart(context.Background(), "bucket1", "mpartObj1", uploadID, 1, mustGetHashReader(t, bytes.NewReader(fiveMBBytes), 5*humanize.MiByte, md5Hex, ""))
 	if err != nil {
 		t.Fatal(err)

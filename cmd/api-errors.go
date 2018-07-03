@@ -23,9 +23,9 @@ import (
 	"net/http"
 
 	"github.com/coreos/etcd/client"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 // APIError structure
@@ -175,7 +175,7 @@ const (
 	ErrInvalidStorageClass
 	ErrBackendDown
 	// Add new extended error codes here.
-	// Please open a https://github.com/piensa/bert/issues before adding
+	// Please open a https://github.com/piensa/nodo/issues before adding
 	// new error codes here.
 
 	ErrMalformedJSON
@@ -444,7 +444,7 @@ var errorCodeResponse = map[APIErrorCode]APIError{
 		Description:    "X-Amz-Date must be in the ISO8601 Long Format \"yyyyMMdd'T'HHmmss'Z'\"",
 		HTTPStatusCode: http.StatusBadRequest,
 	},
-	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/bert/issues/2385.
+	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/nodo/issues/2385.
 	// right Description:    "Error parsing the X-Amz-Credential parameter; incorrect date format \"%s\". This date in the credential must be in the format \"yyyyMMdd\".",
 	// Need changes to make sure variable messages can be constructed.
 	ErrMalformedCredentialDate: {
@@ -452,7 +452,7 @@ var errorCodeResponse = map[APIErrorCode]APIError{
 		Description:    "Error parsing the X-Amz-Credential parameter; incorrect date format \"%s\". This date in the credential must be in the format \"yyyyMMdd\".",
 		HTTPStatusCode: http.StatusBadRequest,
 	},
-	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/bert/issues/2385.
+	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/nodo/issues/2385.
 	// right Description:    "Error parsing the X-Amz-Credential parameter; the region 'us-east-' is wrong; expecting 'us-east-1'".
 	// Need changes to make sure variable messages can be constructed.
 	ErrMalformedCredentialRegion: {
@@ -465,7 +465,7 @@ var errorCodeResponse = map[APIErrorCode]APIError{
 		Description:    "Region does not match.",
 		HTTPStatusCode: http.StatusBadRequest,
 	},
-	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/bert/issues/2385.
+	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/nodo/issues/2385.
 	// right Description:   "Error parsing the X-Amz-Credential parameter; incorrect service \"s4\". This endpoint belongs to \"s3\".".
 	// Need changes to make sure variable messages can be constructed.
 	ErrInvalidService: {
@@ -473,7 +473,7 @@ var errorCodeResponse = map[APIErrorCode]APIError{
 		Description:    "Error parsing the X-Amz-Credential parameter; incorrect service. This endpoint belongs to \"s3\".",
 		HTTPStatusCode: http.StatusBadRequest,
 	},
-	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/bert/issues/2385.
+	// FIXME: Should contain the invalid param set as seen in https://github.com/piensa/nodo/issues/2385.
 	// Description:   "Error parsing the X-Amz-Credential parameter; incorrect terminal "aws4_reque". This endpoint uses "aws4_request".
 	// Need changes to make sure variable messages can be constructed.
 	ErrInvalidRequestVersion: {

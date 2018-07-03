@@ -20,14 +20,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/piensa/bert"
+    "url": "https://github.com/piensa/nodo"
   },
   "author": "Minio Inc",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/piensa/bert/issues"
+    "url": "https://github.com/piensa/nodo/issues"
   },
-  "homepage": "https://github.com/piensa/bert",
+  "homepage": "https://github.com/piensa/nodo",
   "devDependencies": {
     "async": "^1.5.2",
     "babel-cli": "^6.14.0",

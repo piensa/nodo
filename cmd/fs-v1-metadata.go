@@ -26,9 +26,9 @@ import (
 	pathutil "path"
 	"strings"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/lock"
-	"github.com/piensa/bert/pkg/mimedb"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/lock"
+	"github.com/piensa/nodo/pkg/mimedb"
 	"github.com/tidwall/gjson"
 )
 

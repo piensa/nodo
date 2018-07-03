@@ -25,9 +25,9 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/mimedb"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/mimedb"
 )
 
 // list all errors which can be ignored in object operations.

@@ -24,7 +24,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/nodo/pkg/handlers"
 )
 
 const (

@@ -28,9 +28,9 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/minio/cli"
-	xhttp "github.com/piensa/bert/cmd/http"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/certs"
+	xhttp "github.com/piensa/nodo/cmd/http"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/certs"
 )
 
 func init() {

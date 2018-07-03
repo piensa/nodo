@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/piensa/bert-go/pkg/set"
+	"github.com/piensa/nodo-go/pkg/set"
 )
 
 func TestPrincipalIsValid(t *testing.T) {

@@ -54,7 +54,7 @@ func (e ErrorResponse) Error() string {
 }
 
 const (
-	reportIssue = "Please report this issue at https://github.com/piensa/bert/issues."
+	reportIssue = "Please report this issue at https://github.com/piensa/nodo/issues."
 )
 
 // httpRespToErrorResponse returns a new encoded ErrorResponse

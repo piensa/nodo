@@ -22,8 +22,8 @@ import (
 	"path"
 	"sync"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/madmin"
 )
 
 func (xl xlObjects) ReloadFormat(ctx context.Context, dryRun bool) error {

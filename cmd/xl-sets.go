@@ -26,12 +26,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/bpool"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/madmin"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/sync/errgroup"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/bpool"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/madmin"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/sync/errgroup"
 )
 
 // setsStorageAPI is encapsulated type for Close()

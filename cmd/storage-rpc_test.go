@@ -24,7 +24,7 @@ import (
 	"reflect"
 	"testing"
 
-	xnet "github.com/piensa/bert/pkg/net"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 ///////////////////////////////////////////////////////////////////////////////

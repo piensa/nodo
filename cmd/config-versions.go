@@ -19,9 +19,9 @@ package cmd
 import (
 	"sync"
 
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/event/target"
-	"github.com/piensa/bert/pkg/quick"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/event/target"
+	"github.com/piensa/nodo/pkg/quick"
 )
 
 /////////////////// Config V1 ///////////////////

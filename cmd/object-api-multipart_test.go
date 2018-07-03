@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 // Wrapper for calling NewMultipartUpload tests for both XL multiple disks and single node setup.

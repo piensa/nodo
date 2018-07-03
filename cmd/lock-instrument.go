@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 type statusType string

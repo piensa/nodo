@@ -22,8 +22,8 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/piensa/bert/pkg/event"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/pkg/event"
+	xnet "github.com/piensa/nodo/pkg/net"
 
 	"gopkg.in/olivere/elastic.v5"
 )

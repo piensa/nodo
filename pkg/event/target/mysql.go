@@ -61,8 +61,8 @@ import (
 	"time"
 
 	"github.com/go-sql-driver/mysql"
-	"github.com/piensa/bert/pkg/event"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/pkg/event"
+	xnet "github.com/piensa/nodo/pkg/net"
 )
 
 const (

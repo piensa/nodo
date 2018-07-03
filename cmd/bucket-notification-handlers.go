@@ -23,11 +23,11 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/event/target"
-	xnet "github.com/piensa/bert/pkg/net"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/event/target"
+	xnet "github.com/piensa/nodo/pkg/net"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 const (

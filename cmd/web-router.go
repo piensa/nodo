@@ -26,7 +26,7 @@ import (
 	"github.com/gorilla/mux"
 	jsonrpc "github.com/gorilla/rpc/v2"
 	"github.com/gorilla/rpc/v2/json2"
-	"github.com/piensa/bert/browser"
+	"github.com/piensa/nodo/browser"
 )
 
 // webAPI container for Web API.

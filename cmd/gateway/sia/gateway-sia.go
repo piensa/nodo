@@ -36,10 +36,10 @@ import (
 	"github.com/fatih/color"
 	"github.com/minio/cli"
 	"github.com/minio/minio-go/pkg/set"
-	minio "github.com/piensa/bert/cmd"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/hash"
+	minio "github.com/piensa/nodo/cmd"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 const (

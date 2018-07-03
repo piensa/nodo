@@ -1,4 +1,4 @@
-# Kernel Tuning for Minio Production Deployment on Linux Servers [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+# Kernel Tuning for Minio Production Deployment on Linux Servers [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 ## Tuning Network Parameters
 
@@ -76,4 +76,4 @@ sysctl -w kernel.sched_wakeup_granularity_ns=15000000
 
 ## Tuning Disks
 
-The recommendations for disk tuning are conveniently packaged in a well commented [shell script](https://github.com/piensa/bert/blob/master/docs/deployment/kernel-tuning/disk-tuning.sh). Please review the shell script for our recommendations.
+The recommendations for disk tuning are conveniently packaged in a well commented [shell script](https://github.com/piensa/nodo/blob/master/docs/deployment/kernel-tuning/disk-tuning.sh). Please review the shell script for our recommendations.

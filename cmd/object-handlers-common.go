@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/handlers"
 )
 
 // Validates the preconditions for CopyObjectPart, returns true if CopyObjectPart

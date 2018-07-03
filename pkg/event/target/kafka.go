@@ -20,8 +20,8 @@ import (
 	"encoding/json"
 	"net/url"
 
-	"github.com/piensa/bert/pkg/event"
-	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/nodo/pkg/event"
+	xnet "github.com/piensa/nodo/pkg/net"
 
 	sarama "gopkg.in/Shopify/sarama.v1"
 )

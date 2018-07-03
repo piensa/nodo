@@ -20,8 +20,8 @@ import (
 	"io"
 	"time"
 
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/madmin"
 )
 
 // BackendType - represents different backend types.

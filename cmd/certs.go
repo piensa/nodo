@@ -26,7 +26,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/piensa/bert/pkg/certs"
+	"github.com/piensa/nodo/pkg/certs"
 )
 
 // TLSPrivateKeyPassword is the environment variable which contains the password used

@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/piensa/bert/pkg/lock"
+	"github.com/piensa/nodo/pkg/lock"
 )
 
 // Tests long path calls.

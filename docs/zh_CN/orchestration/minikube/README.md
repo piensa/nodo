@@ -1,5 +1,5 @@
 # 使用minikube在本地部署分布式Minio
- [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
+ [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/nodo)](https://goreportcard.com/report/piensa/nodo) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/nodo.svg?maxAge=604800)](https://hub.docker.com/r/piensa/nodo/) [![codecov](https://codecov.io/gh/piensa/nodo/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/nodo)
 
 Minikube在计算机的VM中运行单节点Kubernetes集群。 这样可以轻松地在计算机上本地运行的Kubernetes上部署分布式Minio服务器。
 
@@ -13,8 +13,8 @@ Minikube在计算机的VM中运行单节点Kubernetes集群。 这样可以轻�
 * 下载 `minio_distributed.sh` 和 `statefulset.yaml`
 
 ```sh
-wget https://raw.githubusercontent.com/piensa/bert/master/docs/orchestration/minikube/minio_distributed.sh  
-wget https://raw.githubusercontent.com/piensa/bert/master/docs/orchestration/minikube/statefulset.yaml
+wget https://raw.githubusercontent.com/piensa/nodo/master/docs/orchestration/minikube/minio_distributed.sh  
+wget https://raw.githubusercontent.com/piensa/nodo/master/docs/orchestration/minikube/statefulset.yaml
 ```
 
 * 在命令提示符下执行`minio_distributed.sh`脚本。

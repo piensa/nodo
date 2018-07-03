@@ -21,9 +21,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/madmin"
-	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/madmin"
+	"github.com/piensa/nodo/pkg/policy"
 )
 
 // ObjectLayer implements primitives for object API layer.

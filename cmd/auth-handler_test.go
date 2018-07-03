@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/nodo/pkg/auth"
 )
 
 // Test get request auth type.

@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/nodo/pkg/hash"
 )
 
 // Initialize cache FS objects.

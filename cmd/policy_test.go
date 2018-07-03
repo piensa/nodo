@@ -20,10 +20,10 @@ import (
 	"reflect"
 	"testing"
 
-	miniogopolicy "github.com/piensa/bert-go/pkg/policy"
-	"github.com/piensa/bert-go/pkg/set"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/policy/condition"
+	miniogopolicy "github.com/piensa/nodo-go/pkg/policy"
+	"github.com/piensa/nodo-go/pkg/set"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/policy/condition"
 )
 
 func TestPolicySysSet(t *testing.T) {

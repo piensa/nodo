@@ -26,7 +26,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/nodo/pkg/auth"
 )
 
 // Wrapper for calling GetBucketPolicy HTTP handler tests for both XL multiple disks and single node setup.

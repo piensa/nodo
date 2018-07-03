@@ -24,8 +24,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/madmin"
 )
 
 // healStatusSummary - overall short summary of a healing sequence

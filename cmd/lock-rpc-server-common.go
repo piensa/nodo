@@ -21,7 +21,7 @@ import (
 	"errors"
 	"time"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 // nameLockRequesterInfoPair is a helper type for lock maintenance

@@ -20,7 +20,7 @@ import (
 	"context"
 	"io"
 
-	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/nodo/cmd/logger"
 )
 
 type errIdx struct {

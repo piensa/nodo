@@ -35,13 +35,13 @@ import (
 	"github.com/gorilla/mux"
 
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/dns"
-	"github.com/piensa/bert/pkg/event"
-	"github.com/piensa/bert/pkg/handlers"
-	"github.com/piensa/bert/pkg/hash"
-	"github.com/piensa/bert/pkg/policy"
-	"github.com/piensa/bert/pkg/sync/errgroup"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/dns"
+	"github.com/piensa/nodo/pkg/event"
+	"github.com/piensa/nodo/pkg/handlers"
+	"github.com/piensa/nodo/pkg/hash"
+	"github.com/piensa/nodo/pkg/policy"
+	"github.com/piensa/nodo/pkg/sync/errgroup"
 )
 
 // Check if there are buckets on server without corresponding entry in etcd backend and

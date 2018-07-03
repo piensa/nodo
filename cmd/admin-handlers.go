@@ -29,11 +29,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/piensa/bert/cmd/logger"
-	"github.com/piensa/bert/pkg/auth"
-	"github.com/piensa/bert/pkg/handlers"
-	"github.com/piensa/bert/pkg/madmin"
-	"github.com/piensa/bert/pkg/quick"
+	"github.com/piensa/nodo/cmd/logger"
+	"github.com/piensa/nodo/pkg/auth"
+	"github.com/piensa/nodo/pkg/handlers"
+	"github.com/piensa/nodo/pkg/madmin"
+	"github.com/piensa/nodo/pkg/quick"
 )
 
 const (

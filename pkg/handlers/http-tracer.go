@@ -127,7 +127,7 @@ func (r *recordResponseWriter) Body() []byte {
 // TraceReqHandlerFunc logs request/response headers and body.
 func TraceReqHandlerFunc(f http.HandlerFunc, output io.Writer, logBody bool) http.HandlerFunc {
 	name := runtime.FuncForPC(reflect.ValueOf(f).Pointer()).Name()
-	name = strings.TrimPrefix(name, "github.com/piensa/bert/cmd.")
+	name = strings.TrimPrefix(name, "github.com/piensa/nodo/cmd.")
 	bodyPlaceHolder := []byte("<BODY>")
 
 	return func(w http.ResponseWriter, r *http.Request) {

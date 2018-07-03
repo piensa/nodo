@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/piensa/bert/pkg/policy/condition"
+	"github.com/piensa/nodo/pkg/policy/condition"
 )
 
 // Statement - policy statement.

@@ -19,7 +19,7 @@ package event
 import (
 	"strings"
 
-	"github.com/piensa/bert/pkg/wildcard"
+	"github.com/piensa/nodo/pkg/wildcard"
 )
 
 // NewPattern - create new pattern for prefix/suffix.
