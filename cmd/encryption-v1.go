@@ -30,8 +30,8 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/ioutil"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/ioutil"
 	sha256 "github.com/minio/sha256-simd"
 	"github.com/minio/sio"
 )

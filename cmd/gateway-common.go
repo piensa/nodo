@@ -19,7 +19,7 @@ package cmd
 import (
 	"net/http"
 
-	"github.com/minio/minio/pkg/hash"
+	"github.com/piensa/bert/pkg/hash"
 
 	minio "github.com/minio/minio-go"
 )

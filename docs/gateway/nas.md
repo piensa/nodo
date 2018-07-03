@@ -7,7 +7,7 @@ Minio Gateway adds Amazon S3 compatibility to NAS storage. You may run multiple 
 docker run -p 9000:9000 --name nas-s3 \
  -e "MINIO_ACCESS_KEY=minio" \
  -e "MINIO_SECRET_KEY=minio123" \
- minio/minio gateway nas /shared/nasvol
+ piensa/bert gateway nas /shared/nasvol
 ```
 
 ### Using Binary
@@ -19,7 +19,7 @@ minio gateway nas /shared/nasvol
 ## Test using Minio Browser
 Minio Gateway comes with an embedded web based object browser. Point your web browser to http://127.0.0.1:9000 to ensure that your server has started successfully.
 
-![Screenshot](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/minio-browser-gateway.png)
+![Screenshot](https://raw.githubusercontent.com/piensa/bert/master/docs/screenshots/minio-browser-gateway.png)
 
 ## Test using Minio Client `mc`
 `mc` provides a modern alternative to UNIX commands such as ls, cat, cp, mirror, diff etc. It supports filesystems and Amazon S3 compatible cloud storage services.

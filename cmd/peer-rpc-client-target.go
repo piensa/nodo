@@ -16,7 +16,7 @@
 
 package cmd
 
-import "github.com/minio/minio/pkg/event"
+import "github.com/piensa/bert/pkg/event"
 
 // PeerRPCClientTarget - RPCClient is an event.Target which sends event to target of remote peer.
 type PeerRPCClientTarget struct {

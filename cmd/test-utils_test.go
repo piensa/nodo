@@ -53,13 +53,13 @@ import (
 
 	"github.com/fatih/color"
 	"github.com/gorilla/mux"
-	"github.com/minio/minio-go/pkg/s3signer"
-	"github.com/minio/minio-go/pkg/s3utils"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/bpool"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert-go/pkg/s3signer"
+	"github.com/piensa/bert-go/pkg/s3utils"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/bpool"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // Tests should initNSLock only once.
@@ -814,7 +814,7 @@ func newTestStreamingRequest(method, urlStr string, dataLength, chunkSize int64,
 
 	if body == nil {
 		// this is added to avoid panic during ioutil.ReadAll(req.Body).
-		// th stack trace can be found here  https://github.com/minio/minio/pull/2074 .
+		// th stack trace can be found here  https://github.com/piensa/bert/pull/2074 .
 		// This is very similar to https://github.com/golang/go/issues/7527.
 		req.Body = ioutil.NopCloser(bytes.NewReader([]byte("")))
 	}
@@ -1304,7 +1304,7 @@ func newWebRPCRequest(methodRPC, authorization string, body io.ReadSeeker) (*htt
 		req.Body = ioutil.NopCloser(body)
 	} else {
 		// this is added to avoid panic during ioutil.ReadAll(req.Body).
-		// th stack trace can be found here  https://github.com/minio/minio/pull/2074 .
+		// th stack trace can be found here  https://github.com/piensa/bert/pull/2074 .
 		// This is very similar to https://github.com/golang/go/issues/7527.
 		req.Body = ioutil.NopCloser(bytes.NewReader([]byte("")))
 	}

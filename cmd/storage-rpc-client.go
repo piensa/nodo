@@ -26,8 +26,8 @@ import (
 	"path"
 	"strings"
 
-	"github.com/minio/minio/cmd/logger"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/piensa/bert/cmd/logger"
+	xnet "github.com/piensa/bert/pkg/net"
 )
 
 func isNetworkDisconnectError(err error) bool {

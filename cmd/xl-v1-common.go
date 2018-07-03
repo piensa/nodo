@@ -20,7 +20,7 @@ import (
 	"context"
 	"path"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 )
 
 // getLoadBalancedDisks - fetches load balanced (sufficiently randomized) disk slice.

@@ -1,4 +1,4 @@
-# Minio Contribution Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Minio Contribution Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 ``Minio`` community welcomes your contribution. To make the process as seamless as possible, we recommend you read this contribution guide.
 
@@ -7,7 +7,7 @@
 Start by forking the Minio GitHub repository, make changes in a branch and then send a pull request. We encourage pull requests to discuss code changes. Here are the steps in details:
 
 ### Setup your Minio GitHub Repository
-Fork [Minio upstream](https://github.com/minio/minio/fork) source repository to your own personal repository. Copy the URL of your Minio fork (you will need it for the `git clone` command below).
+Fork [Minio upstream](https://github.com/piensa/bert/fork) source repository to your own personal repository. Copy the URL of your Minio fork (you will need it for the `git clone` command below).
 
 ```sh
 $ mkdir -p $GOPATH/src/github.com/minio
@@ -18,8 +18,8 @@ $ cd minio
 
 ### Set up git remote as ``upstream``
 ```sh
-$ cd $GOPATH/src/github.com/minio/minio
-$ git remote add upstream https://github.com/minio/minio
+$ cd $GOPATH/src/github.com/piensa/bert
+$ git remote add upstream https://github.com/piensa/bert
 $ git fetch upstream
 $ git merge upstream/master
 ...

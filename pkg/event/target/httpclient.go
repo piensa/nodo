@@ -23,8 +23,8 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/minio/minio/pkg/event"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/piensa/bert/pkg/event"
+	xnet "github.com/piensa/bert/pkg/net"
 	"github.com/skyrings/skyring-common/tools/uuid"
 )
 

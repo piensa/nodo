@@ -29,10 +29,10 @@ import (
 
 	etcd "github.com/coreos/etcd/client"
 	humanize "github.com/dustin/go-humanize"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/dns"
-	"github.com/minio/minio/pkg/handlers"
-	"github.com/minio/minio/pkg/sys"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/dns"
+	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/bert/pkg/sys"
 	"github.com/rs/cors"
 	"golang.org/x/time/rate"
 )

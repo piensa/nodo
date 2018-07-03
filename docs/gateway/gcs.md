@@ -20,7 +20,7 @@ docker run -p 9000:9000 --name gcs-s3 \
  -e "GOOGLE_APPLICATION_CREDENTIALS=/credentials.json" \
  -e "MINIO_ACCESS_KEY=minioaccountname" \
  -e "MINIO_SECRET_KEY=minioaccountkey" \
- minio/minio gateway gcs yourprojectid
+ piensa/bert gateway gcs yourprojectid
 ```
 
 ### Using Binary
@@ -34,7 +34,7 @@ minio gateway gcs yourprojectid
 ## Test using Minio Browser
 Minio Gateway comes with an embedded web based object browser. Point your web browser to http://127.0.0.1:9000 to ensure that your server has started successfully.
 
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
+![Screenshot](https://github.com/piensa/bert/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 
 ## Test using Minio Client `mc`
 `mc` provides a modern alternative to UNIX commands such as ls, cat, cp, mirror, diff etc. It supports filesystems and Amazon S3 compatible cloud storage services.

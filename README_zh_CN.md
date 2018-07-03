@@ -1,4 +1,4 @@
-# Minio Quickstart Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Minio Quickstart Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Minio 是一个基于Apache License v2.0开源协议的对象存储服务。它兼容亚马逊S3云存储服务接口，非常适合于存储大容量非结构化的数据，例如图片、视频、日志文件、备份数据和容器/虚拟机镜像等，而一个对象文件可以是任意大小，从几kb到最大5T不等。 
 
@@ -7,14 +7,14 @@ Minio是一个非常轻量的服务,可以很简单的和其他应用的结合�
 ## Docker 容器
 ### 稳定版
 ```
-docker pull minio/minio
-docker run -p 9000:9000 minio/minio server /data
+docker pull piensa/bert
+docker run -p 9000:9000 piensa/bert server /data
 ```
 
 ### 尝鲜版
 ```
-docker pull minio/minio:edge
-docker run -p 9000:9000 minio/minio:edge server /data
+docker pull piensa/bert:edge
+docker run -p 9000:9000 piensa/bert:edge server /data
 ```
 更多Docker部署信息请访问 [这里](https://docs.minio.io/docs/minio-docker-quickstart-guide)
 
@@ -78,13 +78,13 @@ service minio start
 采用源码安装仅供开发人员和高级用户使用,如果你还没有Golang环境， 请参考 [How to install Golang](https://docs.minio.io/docs/how-to-install-golang).
 
 ```sh
-go get -u github.com/minio/minio
+go get -u github.com/piensa/bert
 ```
 
 ## 使用Minio浏览器进行验证
 安装后使用浏览器访问[http://127.0.0.1:9000](http://127.0.0.1:9000)，如果可以访问，则表示minio已经安装成功。
 
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.png?raw=true)
+![Screenshot](https://github.com/piensa/bert/blob/master/docs/screenshots/minio-browser.png?raw=true)
 
 ## 使用Minio客户端 `mc`进行验证
 `mc` 提供了一些UNIX常用命令的替代品，像ls, cat, cp, mirror, diff这些。 它支持文件系统和亚马逊S3云存储服务。 更多信息请参考 [mc快速入门](https://docs.minio.io/docs/minio-client-quickstart-guide) 。
@@ -103,4 +103,4 @@ go get -u github.com/minio/minio
 - [Minio文档](https://docs.minio.io)
 
 ## 如何参与到Minio项目
-请参考 [贡献者指南](https://github.com/minio/minio/blob/master/CONTRIBUTING.md)。欢迎各位中国程序员加到Minio项目中。
+请参考 [贡献者指南](https://github.com/piensa/bert/blob/master/CONTRIBUTING.md)。欢迎各位中国程序员加到Minio项目中。

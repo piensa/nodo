@@ -22,12 +22,12 @@ import (
 	"reflect"
 	"sync"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event"
-	"github.com/minio/minio/pkg/event/target"
-	"github.com/minio/minio/pkg/quick"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event"
+	"github.com/piensa/bert/pkg/event/target"
+	"github.com/piensa/bert/pkg/quick"
 )
 
 // Steps to move from version N to version N+1

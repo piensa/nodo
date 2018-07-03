@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio/pkg/certs"
+	"github.com/piensa/bert/pkg/certs"
 )
 
 func TestNewServer(t *testing.T) {

@@ -34,17 +34,17 @@ import (
 	humanize "github.com/dustin/go-humanize"
 	"github.com/minio/cli"
 	miniogopolicy "github.com/minio/minio-go/pkg/policy"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/policy"
-	"github.com/minio/minio/pkg/policy/condition"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/policy"
+	"github.com/piensa/bert/pkg/policy/condition"
 
 	"google.golang.org/api/googleapi"
 	"google.golang.org/api/iterator"
 	"google.golang.org/api/option"
 
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/piensa/bert/cmd"
 )
 
 var (

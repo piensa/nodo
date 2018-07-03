@@ -28,8 +28,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio-go/pkg/set"
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert-go/pkg/set"
+	"github.com/piensa/bert/cmd/logger"
 )
 
 const (

@@ -1,4 +1,4 @@
-# 使用Kubernetes做Minio的云原生部署 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# 使用Kubernetes做Minio的云原生部署 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 ## 目录
 - [前提条件](#前提条件)
@@ -32,7 +32,7 @@
 [getting started guides](https://kubernetes.io/docs/getting-started-guides/)获取响应平台的安装指导。
 ## Minio Standalone模式部署
 
-以下部分描述了如何在Kubernetes上部署一个独立的 [Minio](https://minio.io/) 服务。部署使用的是Docker Hub上的 [官方Minio Docker image](https://hub.docker.com/r/minio/minio/~/dockerfile/) 。
+以下部分描述了如何在Kubernetes上部署一个独立的 [Minio](https://minio.io/) 服务。部署使用的是Docker Hub上的 [官方Minio Docker image](https://hub.docker.com/r/piensa/bert/~/dockerfile/) 。
 
 此部分使用了以下Kubernetes的核心组件:
 
@@ -46,9 +46,9 @@
 运行下面的命令快速启动
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-pvc.yaml?raw=true
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-deployment.yaml?raw=true
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-pvc.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-deployment.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-service.yaml?raw=true
 ```
 
 ### 创建持久卷声明
@@ -81,7 +81,7 @@ spec:
 创建一个持久卷声明
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-pvc.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-pvc.yaml?raw=true
 persistentvolumeclaim "minio-pv-claim" created
 ```
 
@@ -115,7 +115,7 @@ spec:
       containers:
       - name: minio
         # Pulls the default Minio image from Docker Hub
-        image: minio/minio:RELEASE.2017-05-05T01-14-51Z
+        image: piensa/bert:RELEASE.2017-05-05T01-14-51Z
         args:
         - server
         - /data
@@ -136,7 +136,7 @@ spec:
 创建一个部署
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-deployment.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-deployment.yaml?raw=true
 deployment "minio-deployment" created
 ```
 
@@ -164,7 +164,7 @@ spec:
 创建Minio服务
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-standalone-service.yaml?raw=true
 service "minio-service" created
 ```
 
@@ -202,7 +202,7 @@ kubectl delete deployment minio-deployment \
 
 ## Minio分布式服务部署
 
-以下文档介绍了在Kubernetes上部署[分布式Minio](https://docs.minio.io/cn/distributed-minio-quickstart-guide)服务器的过程。 本示例使用Docker Hub的[官方Minio Docker镜像](https://hub.docker.com/r/minio/minio/~/dockerfile/)。
+以下文档介绍了在Kubernetes上部署[分布式Minio](https://docs.minio.io/cn/distributed-minio-quickstart-guide)服务器的过程。 本示例使用Docker Hub的[官方Minio Docker镜像](https://hub.docker.com/r/piensa/bert/~/dockerfile/)。
 
 此示例使用以下Kubernetes的核心组件：
 
@@ -215,9 +215,9 @@ kubectl delete deployment minio-deployment \
 运行下面的命令快速启动
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-headless-service.yaml?raw=true
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-statefulset.yaml?raw=true
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-headless-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-statefulset.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-service.yaml?raw=true
 ```
 
 ###创建Minio Headless服务
@@ -245,7 +245,7 @@ spec:
 创建Headless服务
 
 ```sh
-$ kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-headless-service.yaml?raw=true
+$ kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-headless-service.yaml?raw=true
 service "minio" created
 ```
 
@@ -277,7 +277,7 @@ spec:
           value: "minio"
         - name: MINIO_SECRET_KEY
           value: "minio123"
-        image: minio/minio:RELEASE.2017-05-05T01-14-51Z
+        image: piensa/bert:RELEASE.2017-05-05T01-14-51Z
         args:
         - server
         - http://minio-0.minio.default.svc.cluster.local/data
@@ -309,7 +309,7 @@ spec:
 创建Statefulset
 
 ```sh
-$ kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-statefulset.yaml?raw=true
+$ kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-statefulset.yaml?raw=true
 statefulset "minio" created
 ```
 
@@ -337,7 +337,7 @@ spec:
 创建Minio service
 
 ```sh
-$ kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-service.yaml?raw=true
+$ kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-distributed-service.yaml?raw=true
 service "minio-service" created
 ```
 
@@ -379,7 +379,7 @@ kubectl delete statefulset minio \
 
 ## Minio GCS网关部署
 
-以下部分介绍在Kubernetes上部署[Minio](https://minio.io/)GCS Gateway的过程。 部署使用Docker Hub的[官方Minio Docker映像](https://hub.docker.com/r/minio/minio/~/dockerfile/)。
+以下部分介绍在Kubernetes上部署[Minio](https://minio.io/)GCS Gateway的过程。 部署使用Docker Hub的[官方Minio Docker映像](https://hub.docker.com/r/piensa/bert/~/dockerfile/)。
 
 此示例使用以下Kubernetes的核心组件：
 
@@ -389,7 +389,7 @@ kubectl delete statefulset minio \
 
 ### GCS 网关快速入门
 
-按照 [这里](https://github.com/minio/minio/blob/master/docs/gateway/gcs.md#create-service-account-key-for-gcs-and-get-the-credentials-file)描述的步骤创建Google云服务认证凭据文件。
+按照 [这里](https://github.com/piensa/bert/blob/master/docs/gateway/gcs.md#create-service-account-key-for-gcs-and-get-the-credentials-file)描述的步骤创建Google云服务认证凭据文件。
 
 使用上面生成的文件来创建一个Kubernetes`secret`。
 
@@ -400,21 +400,21 @@ kubectl create secret generic gcs-credentials --from-file=/path/to/gcloud/creden
 下载 `minio-gcs-gateway-deployment.yaml` 
 
 ```sh
-wget https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-deployment.yaml?raw=true
+wget https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-deployment.yaml?raw=true
 ```
 
 使用你的GCS  project ID更新 `gcp_project_id`部分的内容，然后运行 
 
 ```sh
 kubectl create -f minio-gcs-gateway-deployment.yaml
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-service.yaml?raw=true
 ```
 
 ### 创建GCS凭据
 
 `凭据`旨在保存敏感信息，例如密码，OAuth令牌和ssh密钥。 将这些信息放在一个凭据中比将其逐字地放在pod定义或docker镜像中更安全，更灵活。
 
-按照 [这里](https://github.com/minio/minio/blob/master/docs/gateway/gcs.md#create-service-account-key-for-gcs-and-get-the-credentials-file)描述的步骤创建Google云服务认证凭据文件。
+按照 [这里](https://github.com/piensa/bert/blob/master/docs/gateway/gcs.md#create-service-account-key-for-gcs-and-get-the-credentials-file)描述的步骤创建Google云服务认证凭据文件。
 
 使用上面生成的文件来创建一个Kubernetes`secret`。
 
@@ -452,7 +452,7 @@ spec:
       containers:
       - name: minio
         # Pulls the default Minio image from Docker Hub
-        image: minio/minio:RELEASE.2017-08-05T00-00-53Z
+        image: piensa/bert:RELEASE.2017-08-05T00-00-53Z
         args:
         - gateway
         - gcs
@@ -478,7 +478,7 @@ spec:
 创建部署
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-deployment.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-deployment.yaml?raw=true
 deployment "minio-deployment" created
 ```
 
@@ -505,7 +505,7 @@ spec:
 创建Minio服务
 
 ```sh
-kubectl create -f https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-service.yaml?raw=true
+kubectl create -f https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/minio-gcs-gateway-service.yaml?raw=true
 service "minio-service" created
 ```
 

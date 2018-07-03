@@ -29,11 +29,11 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/handlers"
-	"github.com/minio/minio/pkg/madmin"
-	"github.com/minio/minio/pkg/quick"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/bert/pkg/quick"
 )
 
 const (

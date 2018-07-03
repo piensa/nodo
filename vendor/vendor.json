@@ -471,43 +471,43 @@
 		},
 		{
 			"checksumSHA1": "hdWmWbGpljSQMBOcpcwhAnP2aaQ=",
-			"path": "github.com/minio/minio-go",
+			"path": "github.com/piensa/bert-go",
 			"revision": "10531abd0af1579a12dc1977d67c0fec2b348679",
 			"revisionTime": "2018-06-13T23:01:28Z"
 		},
 		{
 			"checksumSHA1": "Qsj+6JPmJ8R5rFNQSHqRb8xAwOw=",
-			"path": "github.com/minio/minio-go/pkg/credentials",
+			"path": "github.com/piensa/bert-go/pkg/credentials",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
 		{
 			"checksumSHA1": "Md5pOKYfoKtrG7xNvs2FtiDPfDc=",
-			"path": "github.com/minio/minio-go/pkg/encrypt",
+			"path": "github.com/piensa/bert-go/pkg/encrypt",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
 		{
 			"checksumSHA1": "Df4SG4ratsLn8yE9SkHcZiKhKRU=",
-			"path": "github.com/minio/minio-go/pkg/policy",
+			"path": "github.com/piensa/bert-go/pkg/policy",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
 		{
 			"checksumSHA1": "bbWjcrOQsV57qK+BSsrNAsI+Q/o=",
-			"path": "github.com/minio/minio-go/pkg/s3signer",
+			"path": "github.com/piensa/bert-go/pkg/s3signer",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
 		{
 			"checksumSHA1": "xrJThFwwkVrJdwd5iYFHqfx4wRY=",
-			"path": "github.com/minio/minio-go/pkg/s3utils",
+			"path": "github.com/piensa/bert-go/pkg/s3utils",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
 		{
 			"checksumSHA1": "Wt8ej+rZXTdNBR9Xyw1eGo3Iq5o=",
-			"path": "github.com/minio/minio-go/pkg/set",
+			"path": "github.com/piensa/bert-go/pkg/set",
 			"revision": "a2238f0e60facba1c2ccff86ddc624e23fae4f23",
 			"revisionTime": "2018-04-13T18:58:16Z"
 		},
@@ -1156,5 +1156,5 @@
 			"revisionTime": "2016-09-28T15:37:09Z"
 		}
 	],
-	"rootPath": "github.com/minio/minio"
+	"rootPath": "github.com/piensa/bert"
 }

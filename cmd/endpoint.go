@@ -28,8 +28,8 @@ import (
 	"strings"
 
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/mountinfo"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/mountinfo"
 )
 
 // EndpointType - enum for endpoint type.

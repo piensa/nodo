@@ -27,10 +27,10 @@ import (
 	etcd "github.com/coreos/etcd/client"
 	humanize "github.com/dustin/go-humanize"
 	"github.com/fatih/color"
-	xhttp "github.com/minio/minio/cmd/http"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/certs"
-	"github.com/minio/minio/pkg/dns"
+	xhttp "github.com/piensa/bert/cmd/http"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/certs"
+	"github.com/piensa/bert/pkg/dns"
 )
 
 // minio configuration related constants.

@@ -24,7 +24,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/minio/minio/pkg/hash"
+	"github.com/piensa/bert/pkg/hash"
 )
 
 // Initialize cache FS objects.

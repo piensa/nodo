@@ -22,12 +22,12 @@ import (
 	"path"
 
 	"github.com/gorilla/mux"
-	"github.com/minio/minio/cmd/logger"
-	xrpc "github.com/minio/minio/cmd/rpc"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event"
-	xnet "github.com/minio/minio/pkg/net"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	xrpc "github.com/piensa/bert/cmd/rpc"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event"
+	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 const peerServiceName = "Peer"

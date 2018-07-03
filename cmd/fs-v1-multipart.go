@@ -29,10 +29,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	mioutil "github.com/minio/minio/pkg/ioutil"
+	"github.com/piensa/bert/cmd/logger"
+	mioutil "github.com/piensa/bert/pkg/ioutil"
 
-	"github.com/minio/minio/pkg/hash"
+	"github.com/piensa/bert/pkg/hash"
 )
 
 // Returns EXPORT/.minio.sys/multipart/SHA256/UPLOADID

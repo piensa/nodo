@@ -21,8 +21,8 @@ import (
 	"path"
 
 	"github.com/gorilla/mux"
-	"github.com/minio/minio/cmd/logger"
-	xrpc "github.com/minio/minio/cmd/rpc"
+	"github.com/piensa/bert/cmd/logger"
+	xrpc "github.com/piensa/bert/cmd/rpc"
 )
 
 const storageServiceName = "Storage"

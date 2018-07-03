@@ -1,4 +1,4 @@
-# Minio Docker 快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Minio Docker 快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 ## 前提条件
 您的机器已经安装docker. 从 [这里](https://www.docker.com/community-edition#/download)下载相关软件。
@@ -7,7 +7,7 @@
 Minio 需要一个持久卷来存储配置和应用数据。不过, 如果只是为了测试一下, 您可以通过简单地传递一个目录（在下面的示例中为`/ data`）启动Minio。这个目录会在容器启动时在容器的文件系统中创建，不过所有的数据都会在容器退出时丢失。
 
 ```sh
-docker run -p 9000:9000 minio/minio server /data
+docker run -p 9000:9000 piensa/bert server /data
 ```
 
 要创建具有永久存储的Minio容器，您需要将本地持久目录从主机操作系统映射到虚拟配置`~/.minio` 并导出`/data`目录。 为此，请运行以下命令
@@ -17,7 +17,7 @@ docker run -p 9000:9000 minio/minio server /data
 docker run -p 9000:9000 --name minio1 \
   -v /mnt/data:/data \
   -v /mnt/config:/root/.minio \
-  minio/minio server /data
+  piensa/bert server /data
 ```
 
 #### Windows
@@ -25,7 +25,7 @@ docker run -p 9000:9000 --name minio1 \
 docker run -p 9000:9000 --name minio1 \
   -v D:\data:/data \
   -v D:\minio\config:/root/.minio \
-  minio/minio server /data
+  piensa/bert server /data
 ```
 
 ## 在Docker中运行Minio分布式模式
@@ -45,7 +45,7 @@ docker run -p 9000:9000 --name minio1 \
   -e "MINIO_SECRET_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" \
   -v /mnt/data:/data \
   -v /mnt/config:/root/.minio \
-  minio/minio server /data
+  piensa/bert server /data
 ```
 
 #### Windows
@@ -55,7 +55,7 @@ docker run -p 9000:9000 --name minio1 \
   -e "MINIO_SECRET_KEY=wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" \
   -v D:\data:/data \
   -v D:\minio\config:/root/.minio \
-  minio/minio server /data
+  piensa/bert server /data
 ```
 
 ### 使用Docker secrets进行Minio Access和Secret密钥自定义
@@ -68,7 +68,7 @@ echo "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" | docker secret create secret_ke
 
 使用`docker service`创建Minio服务，并读取Docker secrets。
 ```
-docker service create --name="minio-service" --secret="access_key" --secret="secret_key" minio/minio server /data
+docker service create --name="minio-service" --secret="access_key" --secret="secret_key" piensa/bert server /data
 ```
 
 更多 `docker service`信息，请访问 [这里](https://docs.docker.com/engine/swarm/how-swarm-mode-works/services/)

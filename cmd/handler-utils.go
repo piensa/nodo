@@ -25,9 +25,9 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/handlers"
-	httptracer "github.com/minio/minio/pkg/handlers"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/handlers"
+	httptracer "github.com/piensa/bert/pkg/handlers"
 )
 
 // Parses location constraint from the incoming reader.

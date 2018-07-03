@@ -20,11 +20,11 @@ import (
 	"context"
 	"crypto/tls"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event"
-	xnet "github.com/minio/minio/pkg/net"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event"
+	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // PeerRPCClient - peer RPC client talks to peer RPC server.

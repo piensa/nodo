@@ -1,4 +1,4 @@
-# Linux服务器上Minio生产环境的内核调优 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Linux服务器上Minio生产环境的内核调优 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 ## 调优网络参数
 
@@ -68,4 +68,4 @@ sysctl -w kernel.sched_wakeup_granularity_ns=15000000
 
 ## 调优磁盘
 
-我们将磁盘调优的建议整合到了注释完备的 [shell script](https://github.com/minio/minio/blob/master/docs/deployment/kernel-tuning/disk-tuning.sh)，敬请查看。
+我们将磁盘调优的建议整合到了注释完备的 [shell script](https://github.com/piensa/bert/blob/master/docs/deployment/kernel-tuning/disk-tuning.sh)，敬请查看。

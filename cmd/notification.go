@@ -28,12 +28,12 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event"
-	"github.com/minio/minio/pkg/hash"
-	xnet "github.com/minio/minio/pkg/net"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event"
+	"github.com/piensa/bert/pkg/hash"
+	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // NotificationSys - notification system.

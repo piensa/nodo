@@ -16,7 +16,7 @@
 
 /*
  * Below main package has canonical imports for 'go get' and 'go build'
- * to work with all other clones of github.com/minio/minio repository. For
+ * to work with all other clones of github.com/piensa/bert repository. For
  * more information refer https://golang.org/doc/go1.4#canonicalimports
  */
 
@@ -29,10 +29,10 @@ import (
 
 	version "github.com/hashicorp/go-version"
 	"github.com/minio/mc/pkg/console"
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/piensa/bert/cmd"
 
 	// Import gateway
-	_ "github.com/minio/minio/cmd/gateway"
+	_ "github.com/piensa/bert/cmd/gateway"
 )
 
 const (

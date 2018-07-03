@@ -24,7 +24,7 @@ import (
 	"io"
 	"path/filepath"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 	sha256 "github.com/minio/sha256-simd"
 	"github.com/minio/sio"
 )

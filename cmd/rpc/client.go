@@ -28,8 +28,8 @@ import (
 	"reflect"
 	"time"
 
-	xhttp "github.com/minio/minio/cmd/http"
-	xnet "github.com/minio/minio/pkg/net"
+	xhttp "github.com/piensa/bert/cmd/http"
+	xnet "github.com/piensa/bert/pkg/net"
 )
 
 // DefaultRPCTimeout - default RPC timeout is one minute.

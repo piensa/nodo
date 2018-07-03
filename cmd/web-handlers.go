@@ -37,13 +37,13 @@ import (
 	"github.com/gorilla/rpc/v2/json2"
 	miniogopolicy "github.com/minio/minio-go/pkg/policy"
 	"github.com/minio/minio-go/pkg/s3utils"
-	"github.com/minio/minio/browser"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/dns"
-	"github.com/minio/minio/pkg/event"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/browser"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/dns"
+	"github.com/piensa/bert/pkg/event"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // WebGenericArgs - empty struct for calls that don't accept arguments

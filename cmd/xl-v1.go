@@ -21,8 +21,8 @@ import (
 	"sort"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/bpool"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/bpool"
 )
 
 // XL constants.

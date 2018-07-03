@@ -20,7 +20,7 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 )
 
 // objectAPIHandler implements and provides http handlers for S3 API.

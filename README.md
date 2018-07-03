@@ -1,5 +1,5 @@
 # Minio Quickstart Guide
-[![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+[![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Minio is an object storage server released under Apache License v2.0. It is compatible with Amazon S3 cloud storage service. It is best suited for storing unstructured data such as photos, videos, log files, backups and container / VM images. Size of an object can range from a few KBs to a maximum of 5TB.
 
@@ -8,14 +8,14 @@ Minio server is light enough to be bundled with the application stack, similar t
 ## Docker Container
 ### Stable
 ```
-docker pull minio/minio
-docker run -p 9000:9000 minio/minio server /data
+docker pull piensa/bert
+docker run -p 9000:9000 piensa/bert server /data
 ```
 
 ### Edge
 ```
-docker pull minio/minio:edge
-docker run -p 9000:9000 minio/minio:edge server /data
+docker pull piensa/bert:edge
+docker run -p 9000:9000 piensa/bert:edge server /data
 ```
 Please visit Minio Docker quickstart guide for more [here](https://docs.minio.io/docs/minio-docker-quickstart-guide)
 
@@ -77,7 +77,7 @@ service minio start
 Source installation is only intended for developers and advanced users. If you do not have a working Golang environment, please follow [How to install Golang](https://docs.minio.io/docs/how-to-install-golang).
 
 ```sh
-go get -u github.com/minio/minio
+go get -u github.com/piensa/bert
 ```
 
 ## Allow port access for Firewalls
@@ -138,7 +138,7 @@ firewall-cmd --reload
 ## Test using Minio Browser
 Minio Server comes with an embedded web based object browser. Point your web browser to http://127.0.0.1:9000 ensure your server has started successfully.
 
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser.png?raw=true)
+![Screenshot](https://github.com/piensa/bert/blob/master/docs/screenshots/minio-browser.png?raw=true)
 
 ## Test using Minio Client `mc`
 `mc` provides a modern alternative to UNIX commands like ls, cat, cp, mirror, diff etc. It supports filesystems and Amazon S3 compatible cloud storage services. Follow the Minio Client [Quickstart Guide](https://docs.minio.io/docs/minio-client-quickstart-guide) for further instructions.
@@ -157,7 +157,7 @@ The above statement is also valid for all gateway backends.
 - [The Minio documentation website](https://docs.minio.io)
 
 ## Contribute to Minio Project
-Please follow Minio [Contributor's Guide](https://github.com/minio/minio/blob/master/CONTRIBUTING.md)
+Please follow Minio [Contributor's Guide](https://github.com/piensa/bert/blob/master/CONTRIBUTING.md)
 
 
 ## License

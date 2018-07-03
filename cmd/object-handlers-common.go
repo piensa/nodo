@@ -23,8 +23,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio/pkg/event"
-	"github.com/minio/minio/pkg/handlers"
+	"github.com/piensa/bert/pkg/event"
+	"github.com/piensa/bert/pkg/handlers"
 )
 
 // Validates the preconditions for CopyObjectPart, returns true if CopyObjectPart

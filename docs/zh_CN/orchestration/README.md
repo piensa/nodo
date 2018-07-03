@@ -1,4 +1,4 @@
-# Minio部署快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Minio部署快速入门 [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Minio是一个[云原生](https://baike.baidu.com/item/Cloud%20Native/19865304?fr=aladdin)的应用程序，旨在在多租户环境中以可持续的方式进行扩展。Orchestration平台为Minio的扩展提供了非常好的支撑。以下是各种orchestration平台的Minio部署文档
 Minio is a cloud-native application designed to scale in a sustainable manner in multi-tenant environments. Orchestration platforms provide perfect launchpad for Minio to scale. Below is the list of Minio deployment documents for various orchestration platforms:
@@ -21,4 +21,4 @@ Minio是建立在云原生的基础上，有纠删码、分布式和共享存储
 
 现在的应用、数据库，key-store这些，很多都已经部署在容器中，并且通过编排平台进行管理。Minio提供了一个健壮的、可伸缩、AWS S3兼容的对象存储，这是Minio的立身之本，凭此在云原生应用中占据一席之地。
 
-![Cloud-native](https://github.com/minio/minio/blob/master/docs/screenshots/Minio_Cloud_Native_Arch.jpg?raw=true)
+![Cloud-native](https://github.com/piensa/bert/blob/master/docs/screenshots/Minio_Cloud_Native_Arch.jpg?raw=true)

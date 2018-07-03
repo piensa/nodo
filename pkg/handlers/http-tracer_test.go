@@ -63,7 +63,7 @@ func TestTraceHTTPHandler(t *testing.T) {
 			headers:        map[string]string{"Test-Header": "TestHeaderValue"},
 			handler:        TraceReqHandlerFunc(http.HandlerFunc(wsTestSuccessHandler), logOutput, true),
 			expectedStatus: http.StatusOK,
-			expectedLogRegexp: `\[REQUEST github.com/minio/minio/pkg/handlers.wsTestSuccessHandler\] \[[^\]]*\] \[[^\]]*\]
+			expectedLogRegexp: `\[REQUEST github.com/piensa/bert/pkg/handlers.wsTestSuccessHandler\] \[[^\]]*\] \[[^\]]*\]
 PUT /test-log
 Host:\ 
 Test-Header: TestHeaderValue
@@ -83,7 +83,7 @@ sending data
 			handler:        TraceReqHandlerFunc(http.HandlerFunc(wsTestSuccessHandler), logOutput, false),
 			headers:        map[string]string{"Test-Header": "TestHeaderValue"},
 			expectedStatus: http.StatusOK,
-			expectedLogRegexp: `\[REQUEST github.com/minio/minio/pkg/handlers.wsTestSuccessHandler\] \[[^\]]*\] \[[^\]]*\]
+			expectedLogRegexp: `\[REQUEST github.com/piensa/bert/pkg/handlers.wsTestSuccessHandler\] \[[^\]]*\] \[[^\]]*\]
 POST /test-log
 Host:\ 
 Test-Header: TestHeaderValue
@@ -103,7 +103,7 @@ Test-Header: TestHeaderValue
 			handler:        TraceReqHandlerFunc(http.HandlerFunc(wsTest404Handler), logOutput, false),
 			headers:        map[string]string{"Test-Header": "TestHeaderValue"},
 			expectedStatus: http.StatusNotFound,
-			expectedLogRegexp: `\[REQUEST github.com/minio/minio/pkg/handlers.wsTest404Handler\] \[[^\]]*\] \[[^\]]*\]
+			expectedLogRegexp: `\[REQUEST github.com/piensa/bert/pkg/handlers.wsTest404Handler\] \[[^\]]*\] \[[^\]]*\]
 POST /test-log
 Host:\ 
 Test-Header: TestHeaderValue

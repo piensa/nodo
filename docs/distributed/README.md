@@ -1,4 +1,4 @@
-# Distributed Minio Quickstart Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Distributed Minio Quickstart Guide [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Minio in distributed mode lets you pool multiple drives (even on different machines) into a single object storage server. As drives are distributed across several nodes, distributed Minio can withstand multiple node failures and yet ensure full data protection.
 
@@ -8,7 +8,7 @@ Minio in distributed mode can help you setup a highly-available storage system w
 
 ### Data protection
 
-Distributed Minio provides protection against multiple node/drive failures and [bit rot](https://github.com/minio/minio/blob/master/docs/erasure/README.md#what-is-bit-rot-protection) using [erasure code](https://docs.minio.io/docs/minio-erasure-code-quickstart-guide). As the minimum disks required for distributed Minio is 4 (same as minimum disks required for erasure coding), erasure code automatically kicks in as you launch distributed Minio.
+Distributed Minio provides protection against multiple node/drive failures and [bit rot](https://github.com/piensa/bert/blob/master/docs/erasure/README.md#what-is-bit-rot-protection) using [erasure code](https://docs.minio.io/docs/minio-erasure-code-quickstart-guide). As the minimum disks required for distributed Minio is 4 (same as minimum disks required for erasure coding), erasure code automatically kicks in as you launch distributed Minio.
 
 ### High availability
 
@@ -22,7 +22,7 @@ As with Minio in stand-alone mode, distributed Minio has a per tenant limit of m
 
 Note that with distributed Minio you can play around with the number of nodes and drives as long as the limits are adhered to. For example, you can have 2 nodes with 4 drives each, 4 nodes with 4 drives each, 8 nodes with 2 drives each, 32 servers with 24 drives each and so on.
 
-You can also use [storage classes](https://github.com/minio/minio/tree/master/docs/erasure/storage-class) to set custom data and parity distribution across total disks.
+You can also use [storage classes](https://github.com/piensa/bert/tree/master/docs/erasure/storage-class) to set custom data and parity distribution across total disks.
 
 ### Consistency Guarantees
 
@@ -71,7 +71,7 @@ minio.exe server http://192.168.1.11/C:/data http://192.168.1.12/C:/data ^
                   http://192.168.1.17/C:/data http://192.168.1.18/C:/data
 ```
 
-![Distributed Minio, 8 nodes with 1 disk each](https://github.com/minio/minio/blob/master/docs/screenshots/Architecture-diagram_distributed_8.jpg?raw=true)
+![Distributed Minio, 8 nodes with 1 disk each](https://github.com/piensa/bert/blob/master/docs/screenshots/Architecture-diagram_distributed_8.jpg?raw=true)
 
 Example 2: Start distributed Minio instance with 4 drives each on 4 nodes, by running this command on all the 4 nodes.
 
@@ -105,7 +105,7 @@ minio.exe server http://192.168.1.11/C:/data1 http://192.168.1.11/C:/data2 ^
                   http://192.168.1.14/C:/data3 http://192.168.1.14/C:/data4
 ```
 
-![Distributed Minio, 4 nodes with 4 disks each](https://github.com/minio/minio/blob/master/docs/screenshots/Architecture-diagram_distributed_16.jpg?raw=true)
+![Distributed Minio, 4 nodes with 4 disks each](https://github.com/piensa/bert/blob/master/docs/screenshots/Architecture-diagram_distributed_16.jpg?raw=true)
 
 ## 3. Test your setup
 

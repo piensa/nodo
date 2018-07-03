@@ -9,7 +9,7 @@ This document assumes that you have a working [Golang setup](https://docs.minio.
 
 ```sh
 
-go get -u github.com/minio/minio/pkg/madmin
+go get -u github.com/piensa/bert/pkg/madmin
 
 ```
 
@@ -31,7 +31,7 @@ You need four items to connect to Minio admin services.
 package main
 
 import (
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/piensa/bert/pkg/madmin"
 	"log"
 )
 
@@ -65,7 +65,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/piensa/bert/pkg/madmin"
 )
 
 func main() {
@@ -111,10 +111,10 @@ The sample output below shows the result of executing the above program against 
 
 #### Full Examples : Service Operations
 
-* [service-status.go](https://github.com/minio/minio/blob/master/pkg/madmin/examples/service-status.go)
-* [service-restart.go](https://github.com/minio/minio/blob/master/pkg/madmin/examples/service-restart.go)
-* [service-set-credentials.go](https://github.com/minio/minio/blob/master/pkg/madmin/examples/service-set-credentials.go)
+* [service-status.go](https://github.com/piensa/bert/blob/master/pkg/madmin/examples/service-status.go)
+* [service-restart.go](https://github.com/piensa/bert/blob/master/pkg/madmin/examples/service-restart.go)
+* [service-set-credentials.go](https://github.com/piensa/bert/blob/master/pkg/madmin/examples/service-set-credentials.go)
 
 ## Contribute
 
-[Contributors Guide](https://github.com/minio/minio/blob/master/CONTRIBUTING.md)
+[Contributors Guide](https://github.com/piensa/bert/blob/master/CONTRIBUTING.md)

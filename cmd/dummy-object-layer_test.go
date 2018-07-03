@@ -21,9 +21,9 @@ import (
 	"io"
 	"time"
 
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/madmin"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 type DummyObjectLayer struct{}

@@ -21,7 +21,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	xnet "github.com/minio/minio/pkg/net"
+	xnet "github.com/piensa/bert/pkg/net"
 )
 
 func TestClientCall(t *testing.T) {

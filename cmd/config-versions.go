@@ -19,9 +19,9 @@ package cmd
 import (
 	"sync"
 
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event/target"
-	"github.com/minio/minio/pkg/quick"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event/target"
+	"github.com/piensa/bert/pkg/quick"
 )
 
 /////////////////// Config V1 ///////////////////

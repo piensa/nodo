@@ -22,8 +22,8 @@ import (
 	"path"
 	"sync"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/madmin"
 )
 
 func (xl xlObjects) ReloadFormat(ctx context.Context, dryRun bool) error {

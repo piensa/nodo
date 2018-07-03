@@ -25,7 +25,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/piensa/bert/pkg/madmin"
 )
 
 var configJSON = []byte(`{

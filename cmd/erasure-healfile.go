@@ -22,7 +22,7 @@ import (
 	"hash"
 	"strings"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 )
 
 // HealFile tries to reconstruct an erasure-coded file spread over all

@@ -26,7 +26,7 @@ import (
 	"io/ioutil"
 	"os"
 
-	"github.com/minio/minio/pkg/certs"
+	"github.com/piensa/bert/pkg/certs"
 )
 
 // TLSPrivateKeyPassword is the environment variable which contains the password used

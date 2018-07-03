@@ -32,8 +32,8 @@ import (
 	"time"
 
 	"github.com/gorilla/mux"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/madmin"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/madmin"
 )
 
 var (

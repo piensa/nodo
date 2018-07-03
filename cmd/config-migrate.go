@@ -22,12 +22,12 @@ import (
 	"path/filepath"
 
 	etcd "github.com/coreos/etcd/client"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/event"
-	"github.com/minio/minio/pkg/event/target"
-	xnet "github.com/minio/minio/pkg/net"
-	"github.com/minio/minio/pkg/quick"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/event"
+	"github.com/piensa/bert/pkg/event/target"
+	xnet "github.com/piensa/bert/pkg/net"
+	"github.com/piensa/bert/pkg/quick"
 )
 
 // DO NOT EDIT following message template, please open a github issue to discuss instead.

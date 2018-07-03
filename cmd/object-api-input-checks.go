@@ -19,7 +19,7 @@ package cmd
 import (
 	"context"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 	"github.com/skyrings/skyring-common/tools/uuid"
 )
 

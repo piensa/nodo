@@ -36,7 +36,7 @@ import (
 	"time"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // API suite container common to both FS and XL.

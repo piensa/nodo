@@ -28,7 +28,7 @@ import (
 
 	etcd "github.com/coreos/etcd/client"
 	"github.com/fatih/structs"
-	"github.com/minio/minio/pkg/safe"
+	"github.com/piensa/bert/pkg/safe"
 )
 
 // Config - generic config interface functions

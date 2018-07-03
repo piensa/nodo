@@ -1,6 +1,6 @@
 # Disk Caching Design [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io)
 
-This document explains some basic assumptions and design approach, limits of the disk caching feature. If you're looking to get started with disk cache, we suggest you go through the [getting started document](https://github.com/minio/minio/blob/master/docs/disk-caching/README.md) first.
+This document explains some basic assumptions and design approach, limits of the disk caching feature. If you're looking to get started with disk cache, we suggest you go through the [getting started document](https://github.com/piensa/bert/blob/master/docs/disk-caching/README.md) first.
 
 ## Command-line
 

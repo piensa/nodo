@@ -8,7 +8,7 @@ Minio网关将亚马逊S3兼容性添加到微软Azure Blob存储。
 docker run -p 9000:9000 --name azure-s3 \
  -e "MINIO_ACCESS_KEY=azureaccountname" \
  -e "MINIO_SECRET_KEY=azureaccountkey" \
- minio/minio gateway azure
+ piensa/bert gateway azure
 ```
 
 ### 使用二进制
@@ -20,7 +20,7 @@ minio gateway azure
 ## 使用Minio浏览器验证
 Minio Gateway配有嵌入式网络对象浏览器。 将您的Web浏览器指向http://127.0.0.1:9000确保您的服务器已成功启动。
 
-![截图](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
+![截图](https://github.com/piensa/bert/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 ##使用Minio客户端 `mc`验证
 `mc` 提供了诸如ls，cat，cp，mirror，diff等UNIX命令的替代方案。它支持文件系统和Amazon S3兼容的云存储服务。
 
@@ -38,7 +38,7 @@ mc ls myazure
 ```
 
 ### 已知的限制
-[限制](https://github.com/minio/minio/blob/master/docs/gateway/azure-limitations.md)
+[限制](https://github.com/piensa/bert/blob/master/docs/gateway/azure-limitations.md)
 
 ## 了解更多
 - [`mc` 命令行接口](https://docs.minio.io/cn/minio-client-quickstart-guide)

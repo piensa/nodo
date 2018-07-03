@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/minio/minio/pkg/policy/condition"
+	"github.com/piensa/bert/pkg/policy/condition"
 )
 
 // Action - policy action.

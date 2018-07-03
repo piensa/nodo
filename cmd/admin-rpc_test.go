@@ -27,7 +27,7 @@ import (
 	"testing"
 	"time"
 
-	xnet "github.com/minio/minio/pkg/net"
+	xnet "github.com/piensa/bert/pkg/net"
 )
 
 ///////////////////////////////////////////////////////////////////////////////

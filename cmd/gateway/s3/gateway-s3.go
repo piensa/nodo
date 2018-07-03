@@ -25,12 +25,12 @@ import (
 	"github.com/minio/cli"
 	miniogo "github.com/minio/minio-go"
 	"github.com/minio/minio-go/pkg/s3utils"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/auth"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/auth"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/policy"
 
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/piensa/bert/cmd"
 )
 
 const (

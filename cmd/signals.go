@@ -20,7 +20,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/minio/minio/cmd/logger"
+	"github.com/piensa/bert/cmd/logger"
 )
 
 func handleSignals() {

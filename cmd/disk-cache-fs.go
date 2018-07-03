@@ -28,10 +28,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/disk"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/lock"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/disk"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/lock"
 )
 
 const (

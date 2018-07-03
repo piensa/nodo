@@ -21,7 +21,7 @@ import (
 	"fmt"
 
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/minio/minio/pkg/wildcard"
+	"github.com/piensa/bert/pkg/wildcard"
 )
 
 // Principal - policy principal.

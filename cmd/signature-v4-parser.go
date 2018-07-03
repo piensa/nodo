@@ -21,7 +21,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/minio/minio/pkg/auth"
+	"github.com/piensa/bert/pkg/auth"
 )
 
 // credentialHeader data type represents structured form of Credential

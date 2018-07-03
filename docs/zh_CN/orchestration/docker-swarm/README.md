@@ -1,4 +1,4 @@
-# 使用Docker Swarm部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# 使用Docker Swarm部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Docker Engine在Swarm模式下提供集群管理和编排功能。 Minio服务器可以在Swarm的分布式模式下轻松部署，创建一个多租户，高可用性和可扩展的对象存储。
 
@@ -34,7 +34,7 @@ echo "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY" | docker secret create secret_ke
 
 ## 4. 部署分布式minio服务
 
-在你的Swarm master上下载[Docker Compose file](https://github.com/minio/minio/blob/master/docs/orchestration/docker-swarm/docker-compose-secrets.yaml?raw=true) ，然后运行下面的命令
+在你的Swarm master上下载[Docker Compose file](https://github.com/piensa/bert/blob/master/docs/orchestration/docker-swarm/docker-compose-secrets.yaml?raw=true) ，然后运行下面的命令
 
 ```shell
 docker stack deploy --compose-file=docker-compose-secrets.yaml minio_stack
@@ -64,7 +64,7 @@ docker volume rm volume_name
 
 ### 注意事项
 
-* 默认情况下Docker Compose file使用的是最新版的Minio server的Docker镜像，你可以修改image tag来拉取指定版本的[Minio Docker image](https://hub.docker.com/r/minio/minio/).
+* 默认情况下Docker Compose file使用的是最新版的Minio server的Docker镜像，你可以修改image tag来拉取指定版本的[Minio Docker image](https://hub.docker.com/r/piensa/bert/).
 
 * 默认情况下会创建4个minio实例，你可以添加更多的Minio服务（最多总共16个）到你的Minio Comose deployment。添加一个服务
   * 复制服务定义并适当地更改新服务的名称。

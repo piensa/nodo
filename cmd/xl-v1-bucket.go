@@ -21,8 +21,8 @@ import (
 	"sort"
 	"sync"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // list all errors that can be ignore in a bucket operation.

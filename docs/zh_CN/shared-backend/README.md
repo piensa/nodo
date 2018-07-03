@@ -1,6 +1,6 @@
-# Minio共享后端存储快速入门[![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# Minio共享后端存储快速入门[![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
-Minio共享模式可以让你使用一个[NAS](https://en.wikipedia.org/wiki/Network-attached_storage) 做为多个Minio服务的存储后端。我我们在设计时已经对多个Minio服务之间的同步做了很多的处理。更多Minio共享模式的设计文档，请访问[这里](https://github.com/minio/minio/blob/master/docs/shared-backend/DESIGN.md).
+Minio共享模式可以让你使用一个[NAS](https://en.wikipedia.org/wiki/Network-attached_storage) 做为多个Minio服务的存储后端。我我们在设计时已经对多个Minio服务之间的同步做了很多的处理。更多Minio共享模式的设计文档，请访问[这里](https://github.com/piensa/bert/blob/master/docs/shared-backend/DESIGN.md).
 
 Minio共享模式是为了解决在真实场景中存在的一些问题，而且不需要做额外的配置。
 如果你有下列需求，则可以考虑Minio共享模式

@@ -26,9 +26,9 @@ import (
 
 	miniogopolicy "github.com/minio/minio-go/pkg/policy"
 	"github.com/minio/minio-go/pkg/set"
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/handlers"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/handlers"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // PolicySys - policy subsystem.

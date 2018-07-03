@@ -6,7 +6,7 @@ Minio protects data against hardware failures and silent data corruption using e
 
 Erasure code is a mathematical algorithm to reconstruct missing or corrupted data. Minio uses Reed-Solomon code to shard objects into variable data and parity blocks. For example, in a 12 drive setup, an object can be sharded to a variable number of data and parity blocks across all the drives - ranging from six data and six parity blocks to ten data and two parity blocks.
 
-By default, Minio shards the objects across N/2 data and N/2 parity drives. Though, you can use [storage classes](https://github.com/minio/minio/tree/master/docs/erasure/storage-class) to use a custom configuration. We recommend N/2 data and parity blocks, as it ensures the best protection from drive failures.
+By default, Minio shards the objects across N/2 data and N/2 parity drives. Though, you can use [storage classes](https://github.com/piensa/bert/tree/master/docs/erasure/storage-class) to use a custom configuration. We recommend N/2 data and parity blocks, as it ensures the best protection from drive failures.
 
 In 12 drive example above, with Minio server running in the default configuration, you can lose any of the six drives and still reconstruct the data reliably from the remaining drives.
 
@@ -14,7 +14,7 @@ In 12 drive example above, with Minio server running in the default configuratio
 
 Erasure code protects data from multiple drives failure, unlike RAID or replication. For example, RAID6 can protect against two drive failure whereas in Minio erasure code you can lose as many as half of drives and still the data remains safe. Further, Minio's erasure code is at the object level and can heal one object at a time. For RAID, healing can be done only at the volume level which translates into high downtime. As Minio encodes each object individually, it can heal objects incrementally. Storage servers once deployed should not require drive replacement or healing for the lifetime of the server. Minio's erasure coded backend is designed for operational efficiency and takes full advantage of hardware acceleration whenever available.
 
-![Erasure](https://github.com/minio/minio/blob/master/docs/screenshots/erasure-code.jpg?raw=true)
+![Erasure](https://github.com/piensa/bert/blob/master/docs/screenshots/erasure-code.jpg?raw=true)
 
 ## What is Bit Rot protection?
 
@@ -48,7 +48,7 @@ docker run -p 9000:9000 --name minio \
   -v /mnt/data6:/data6 \
   -v /mnt/data7:/data7 \
   -v /mnt/data8:/data8 \
-  minio/minio server /data1 /data2 /data3 /data4 /data5 /data6 /data7 /data8
+  piensa/bert server /data1 /data2 /data3 /data4 /data5 /data6 /data7 /data8
 ```
 
 ### 3. Test your setup

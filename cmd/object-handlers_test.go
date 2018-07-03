@@ -31,7 +31,7 @@ import (
 	"testing"
 
 	humanize "github.com/dustin/go-humanize"
-	"github.com/minio/minio/pkg/auth"
+	"github.com/piensa/bert/pkg/auth"
 )
 
 // Type to capture different modifications to API request to simulate failure cases.

@@ -24,9 +24,9 @@ import (
 
 	"github.com/gorilla/mux"
 	"github.com/minio/dsync"
-	"github.com/minio/minio/cmd/logger"
-	xrpc "github.com/minio/minio/cmd/rpc"
-	xnet "github.com/minio/minio/pkg/net"
+	"github.com/piensa/bert/cmd/logger"
+	xrpc "github.com/piensa/bert/cmd/rpc"
+	xnet "github.com/piensa/bert/pkg/net"
 )
 
 const (

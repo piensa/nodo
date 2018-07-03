@@ -29,13 +29,13 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/hash"
-	"github.com/minio/minio/pkg/lock"
-	"github.com/minio/minio/pkg/madmin"
-	"github.com/minio/minio/pkg/mimedb"
-	"github.com/minio/minio/pkg/mountinfo"
-	"github.com/minio/minio/pkg/policy"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/hash"
+	"github.com/piensa/bert/pkg/lock"
+	"github.com/piensa/bert/pkg/madmin"
+	"github.com/piensa/bert/pkg/mimedb"
+	"github.com/piensa/bert/pkg/mountinfo"
+	"github.com/piensa/bert/pkg/policy"
 )
 
 // Default etag is used for pre-existing objects.

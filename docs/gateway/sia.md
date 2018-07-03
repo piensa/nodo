@@ -40,7 +40,7 @@ minio gateway sia [SIA_DAEMON_ADDRESS]
 The [SIA_DAEMON_ADDRESS] is optional, and it defaults to "127.0.0.1:9980".
 Access information should then be presented on-screen. To connect to the server and upload files using your web browser, open a web browser and point it to the address displayed for "Browser Access." Then log in using the "AccessKey" and "SecretKey" that are also displayed on-screen. You should then be able to create buckets (folders) and upload files.
 
-![Screenshot](https://github.com/minio/minio/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
+![Screenshot](https://github.com/piensa/bert/blob/master/docs/screenshots/minio-browser-gateway.png?raw=true)
 
 ### Known limitations
 

@@ -7,7 +7,7 @@ Minio网关使用NAS存储支持Amazon S3。你可以在同一个共享NAS卷上
 docker run -p 9000:9000 --name nas-s3 \
  -e "MINIO_ACCESS_KEY=minio" \
  -e "MINIO_SECRET_KEY=minio123" \
- minio/minio gateway nas /shared/nasvol
+ piensa/bert gateway nas /shared/nasvol
 ```
 
 ### 使用二进制
@@ -19,7 +19,7 @@ minio gateway nas /shared/nasvol
 ## 使用浏览器进行验证
 使用你的浏览器访问`http://127.0.0.1:9000`,如果能访问，恭喜你，启动成功了。
 
-![Screenshot](https://raw.githubusercontent.com/minio/minio/master/docs/screenshots/minio-browser-gateway.png)
+![Screenshot](https://raw.githubusercontent.com/piensa/bert/master/docs/screenshots/minio-browser-gateway.png)
 
 ## 使用`mc`进行验证
 `mc`为ls，cat，cp，mirror，diff，find等UNIX命令提供了一种替代方案。它支持文件系统和兼容Amazon S3的云存储服务（AWS Signature v2和v4）。

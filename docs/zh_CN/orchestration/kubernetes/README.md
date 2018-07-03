@@ -1,12 +1,12 @@
-# 使用Kubernetes部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/minio/minio)](https://goreportcard.com/report/minio/minio) [![Docker Pulls](https://img.shields.io/docker/pulls/minio/minio.svg?maxAge=604800)](https://hub.docker.com/r/minio/minio/) [![codecov](https://codecov.io/gh/minio/minio/branch/master/graph/badge.svg)](https://codecov.io/gh/minio/minio)
+# 使用Kubernetes部署Minio [![Slack](https://slack.minio.io/slack?type=svg)](https://slack.minio.io) [![Go Report Card](https://goreportcard.com/badge/piensa/bert)](https://goreportcard.com/report/piensa/bert) [![Docker Pulls](https://img.shields.io/docker/pulls/piensa/bert.svg?maxAge=604800)](https://hub.docker.com/r/piensa/bert/) [![codecov](https://codecov.io/gh/piensa/bert/branch/master/graph/badge.svg)](https://codecov.io/gh/piensa/bert)
 
 Kubernetes的部署和状态集提供了在独立，分布式或共享模式下部署Minio服务器的完美平台。 在Kubernetes上部署Minio有多种选择，您可以选择最适合您的。
 
 - Minio [Helm](https://helm.sh) Chart通过一个简单的命令即可提供自定义而且简单的Minio部署。更多关于Minio Helm部署的资料，请访问[这里](#prerequisites).
 
-- 你也可以浏览Kubernetes [Minio示例](https://github.com/minio/minio/blob/master/docs/orchestration/kubernetes-yaml/README.md) ，通过`.yaml`文件来部署Minio。
+- 你也可以浏览Kubernetes [Minio示例](https://github.com/piensa/bert/blob/master/docs/orchestration/kubernetes-yaml/README.md) ，通过`.yaml`文件来部署Minio。
 
-- 如果您想在Kubernetes上开始使用Minio，而无需创建真正的容器集群，您也可以使用Minikube [deploy Minio locally](https://raw.githubusercontent.com/minio/minio/master/docs/orchestration/minikube/README.md)。
+- 如果您想在Kubernetes上开始使用Minio，而无需创建真正的容器集群，您也可以使用Minikube [deploy Minio locally](https://raw.githubusercontent.com/piensa/bert/master/docs/orchestration/minikube/README.md)。
 
 <a name="prerequisites"></a>
 ## 1. 前提条件
@@ -29,8 +29,8 @@ $ helm install stable/minio
 
 | 参数                  | 描述                         | 默认值                                                 |
 |----------------------------|-------------------------------------|---------------------------------------------------------|
-| `image`                    | Minio镜像名称                | `minio/minio`                                           |
-| `imageTag`                 | Minio镜像tag. 可选值在 [这里](https://hub.docker.com/r/minio/minio/tags/).| `RELEASE.2017-08-05T00-00-53Z`|
+| `image`                    | Minio镜像名称                | `piensa/bert`                                           |
+| `imageTag`                 | Minio镜像tag. 可选值在 [这里](https://hub.docker.com/r/piensa/bert/tags/).| `RELEASE.2017-08-05T00-00-53Z`|
 | `imagePullPolicy`          | Image pull policy                   | `Always`                                                |
 | `mode`                     | Minio server模式 (`standalone`, `shared` 或者 `distributed`)| `standalone`                     |
 | `numberOfNodes`            | 节点数 (仅对分布式模式生效). 可选值 4 <= x <= 16 | `4`    |
@@ -86,7 +86,7 @@ $ helm install --set mode=distributed,numberOfNodes=8 stable/minio
 
 ### Shared Minio
 
-如需采用[shared mode](https://github.com/minio/minio/blob/master/docs/shared-backend/README.md)部署Minio, 将`mode` 设为`shared`,
+如需采用[shared mode](https://github.com/piensa/bert/blob/master/docs/shared-backend/README.md)部署Minio, 将`mode` 设为`shared`,
 
 ```bash
 $ helm install --set mode=shared stable/minio

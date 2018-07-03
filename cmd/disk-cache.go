@@ -31,10 +31,10 @@ import (
 
 	"github.com/djherbis/atime"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/wildcard"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/wildcard"
 
-	"github.com/minio/minio/pkg/hash"
+	"github.com/piensa/bert/pkg/hash"
 )
 
 // list of all errors that can be ignored in tree walk operation in disk cache

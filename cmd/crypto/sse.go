@@ -19,8 +19,8 @@ import (
 	"errors"
 	"io"
 
-	"github.com/minio/minio/cmd/logger"
-	"github.com/minio/minio/pkg/ioutil"
+	"github.com/piensa/bert/cmd/logger"
+	"github.com/piensa/bert/pkg/ioutil"
 	"github.com/minio/sio"
 )
 

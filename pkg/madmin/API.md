@@ -11,7 +11,7 @@ package main
 import (
     "fmt"
 
-    "github.com/minio/minio/pkg/madmin"
+    "github.com/piensa/bert/pkg/madmin"
 )
 
 func main() {

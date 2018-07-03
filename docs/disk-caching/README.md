@@ -35,7 +35,7 @@ minio server /export{1...24}
 To test this setup, access the Minio server via browser or [`mc`](https://docs.minio.io/docs/minio-client-quickstart-guide). You’ll see the uploaded files are accessible from the all the Minio endpoints.
 
 # Explore Further
-- [Disk cache design](https://github.com/minio/minio/blob/master/docs/disk-caching/DESIGN.md)
+- [Disk cache design](https://github.com/piensa/bert/blob/master/docs/disk-caching/DESIGN.md)
 - [Use `mc` with Minio Server](https://docs.minio.io/docs/minio-client-quickstart-guide)
 - [Use `aws-cli` with Minio Server](https://docs.minio.io/docs/aws-cli-with-minio)
 - [Use `s3cmd` with Minio Server](https://docs.minio.io/docs/s3cmd-with-minio)

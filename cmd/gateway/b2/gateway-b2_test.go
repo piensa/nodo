@@ -22,7 +22,7 @@ import (
 
 	b2 "github.com/minio/blazer/base"
 
-	minio "github.com/minio/minio/cmd"
+	minio "github.com/piensa/bert/cmd"
 )
 
 // Test b2 object error.
