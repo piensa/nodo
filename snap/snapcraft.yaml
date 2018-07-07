@@ -1,0 +1,32 @@
+name: nodo
+version: master
+summary: Open source geospatial storage server compatible with Amazon S3 APIs
+description: |
+  Nodo is an geospatial storage server released under Apache License v2.0. It is
+  compatible with Amazon S3 cloud storage service. It is best suited for
+  storing unstructured data such as photos, videos, log files, backups and
+  container / VM images. Size of an object can range from a few KBs to a
+  maximum of 5TB. It's a fork of Minio (minio.io) that adds static website
+  hosting and support for WFS and STAC.
+
+grade: devel # must be 'stable' to release into candidate/stable channels
+confinement: strict
+
+apps:
+  nodo:
+    command: nodo
+    plugs:
+      - home
+      - mount-observe
+      - network
+      - network-bind
+      - removable-media
+
+parts:
+  nodo:
+    source: .
+    plugin: go
+    go-importpath: github.com/piensa/nodo
+    after: [go]
+  go:
+    source-tag: go1.10
