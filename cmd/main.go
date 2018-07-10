@@ -122,7 +122,7 @@ func newApp(name string) *cli.App {
 	app.Name = name
 	app.Author = "piensa.co"
 	app.Version = Version
-	app.Usage = "nodo - GIS storage server."
+	app.Usage = "GIS storage server."
 	app.Description = `nodo - A modified Minio. Minio is an Amazon S3 compatible object storage server. Use it to store photos, videos, VMs, containers, log files, or any blob of data as objects.`
 	app.Flags = globalFlags
 	app.HideVersion = true     // Hide `--version` flag, we already have `minio version`.
