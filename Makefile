@@ -1,7 +1,6 @@
 PWD := $(shell pwd)
 GOPATH := $(shell go env GOPATH)
 LDFLAGS := $(shell go run buildscripts/gen-ldflags.go)
-GOARCH := amd64
 
 BUILD_LDFLAGS := '$(LDFLAGS)'
 
@@ -72,7 +71,7 @@ coverage: build
 # Builds minio locally.
 build: checks
 	@echo "Building nodo binary to './nodo'"
-	@CGO_ENABLED=0 GOARCH=$(GOARCH) go build -tags kqueue --ldflags $(BUILD_LDFLAGS) -o $(PWD)/nodo
+	@CGO_ENABLED=0 go build -tags kqueue --ldflags $(BUILD_LDFLAGS) -o $(PWD)/nodo
 
 pkg-add:
 	@echo "Adding new package $(PKG)"

@@ -30,7 +30,7 @@ parts:
     override-build: |     
       mkdir -p ../go/src/github.com/piensa/nodo
       cp -R . ../go/src/github.com/piensa/nodo
-      env GOPATH=$(pwd)/../go GOARCH=$TARGET_GOARCH make -C ../go/src/github.com/piensa/nodo install
+      env GOPATH=$(pwd)/../go make -C ../go/src/github.com/piensa/nodo install
       snapcraftctl build
       mkdir $SNAPCRAFT_PART_INSTALL/bin
       mv ../go/bin/nodo $SNAPCRAFT_PART_INSTALL/bin/
