@@ -1,7 +1,7 @@
 PWD := $(shell pwd)
 GOPATH := $(shell go env GOPATH)
 LDFLAGS := $(shell go run buildscripts/gen-ldflags.go)
-GOARCH := 'amd64'
+GOARCH := amd64
 
 BUILD_LDFLAGS := '$(LDFLAGS)'
 

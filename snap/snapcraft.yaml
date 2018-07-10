@@ -36,4 +36,4 @@ parts:
       mv ../go/bin/nodo $SNAPCRAFT_PART_INSTALL/bin/
     after: [go]
   go:
-    source-tag: go1.10
+    source-tag: go1.10.3
