@@ -9,8 +9,8 @@ description: |
   maximum of 5TB. It's a fork of Minio (minio.io) that adds static website
   hosting and support for WFS and STAC.
 
-grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: devmode
+grade: stable
+confinement: strict
 
 apps:
   nodo:
