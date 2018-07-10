@@ -10,7 +10,7 @@ description: |
   hosting and support for WFS and STAC.
 
 grade: devel # must be 'stable' to release into candidate/stable channels
-confinement: strict
+confinement: devmode
 
 apps:
   nodo:
@@ -25,8 +25,15 @@ apps:
 parts:
   nodo:
     source: .
-    plugin: go
-    go-importpath: github.com/piensa/nodo
+    plugin: nil
+    build-packages: [make,]
+    override-build: |     
+      mkdir -p ../go/src/github.com/piensa/nodo
+      cp -R . ../go/src/github.com/piensa/nodo
+      env GOPATH=$(pwd)/../go GOARCH=$TARGET_GOARCH make -C ../go/src/github.com/piensa/nodo install
+      snapcraftctl build
+      mkdir $SNAPCRAFT_PART_INSTALL/bin
+      mv ../go/bin/nodo $SNAPCRAFT_PART_INSTALL/bin/
     after: [go]
   go:
     source-tag: go1.10
