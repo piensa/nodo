@@ -22,7 +22,6 @@ apps:
       - network-bind
       - network-control
       - removable-media
-      - mount-observe
 
 parts:
   nodo:
